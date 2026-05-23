@@ -23,7 +23,6 @@ const sliders = document.querySelectorAll(".slider");
 sliders.forEach((slider) => {
 
   const slides = slider.querySelectorAll(".slide");
-  const dots = slider.querySelectorAll(".dot");
 
   const nextBtn = slider.querySelector(".next");
   const prevBtn = slider.querySelector(".prev");
@@ -40,12 +39,8 @@ sliders.forEach((slider) => {
       slide.classList.remove("active");
     });
 
-    dots.forEach((dot) => {
-      dot.classList.remove("active");
-    });
-
     slides[index].classList.add("active");
-    dots[index].classList.add("active");
+  
   }
 
   /* =========================
@@ -81,34 +76,24 @@ sliders.forEach((slider) => {
   });
 
   /* =========================
-     DOT CLICK
-  ========================= */
-
-  dots.forEach((dot, index) => {
-
-    dot.addEventListener("click", () => {
-
-      currentSlide = index;
-      showSlide(currentSlide);
-
-    });
-
-  });
-
-  /* =========================
      AUTO SLIDE
   ========================= */
 
-  setInterval(() => {
+  // Disable autoplay for #slider2
+  if (slider.id !== "slider2") {
 
-    currentSlide++;
+    setInterval(() => {
 
-    if(currentSlide >= slides.length){
-      currentSlide = 0;
-    }
+      currentSlide++;
 
-    showSlide(currentSlide);
+      if(currentSlide >= slides.length){
+        currentSlide = 0;
+      }
 
-  }, 4000);
+      showSlide(currentSlide);
+
+    }, 4000);
+
+  }
 
 });

@@ -196,18 +196,19 @@ body {
 
   gap: 25px;
 
-  background: #b9b4b487;
+  background: #0d224a0a;
 }
 
 /* CARD */
 
 .feature-card {
-  background: #fff;
+  background: #ffffff42;
 
   padding: 20px;
   border-radius: 8px;
 
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  
 }
 
 /* TITLE */
@@ -246,7 +247,7 @@ body {
 
 .feature-item iframe {
   width: 100%;
-  height: 200px;
+  height: 250px;
   border: none;
   border-radius: 6px;
 }
@@ -660,53 +661,50 @@ body {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
 }
+
 /* =========================
    SLIDER SECTION
 ========================= */
-.slider-wrapper{
+
+.slider-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 6rem;
-}
-
-.slider-section{
-  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
   max-width: 1200px;
-
-  margin: 40px auto;
-  padding: 20px;
-
-  background: #ffffff;
+  margin: auto;
 }
 
 /* =========================
    SLIDER
 ========================= */
 
-.slider{
+.slider {
   position: relative;
   overflow: hidden;
+  width: 780px;
+  height: 500px;
+  border-radius: 8px;
 }
 
-.slides{
+.slides {
   position: relative;
 }
 
-.slide{
+.slide {
   display: none;
 }
 
-.slide.active{
+.slide.active {
   display: block;
 }
 
-.slide img{
+.slide img {
   width: 100%;
-  height: 650px;
-
-  object-fit: cover;
+  max-height: full;
+  object-fit: contain;
   display: block;
+  margin: auto;
 }
 
 /* =========================
@@ -714,7 +712,7 @@ body {
 ========================= */
 
 .prev,
-.next{
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -725,7 +723,7 @@ body {
   border: none;
   border-radius: 50%;
 
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   color: #fff;
 
   cursor: pointer;
@@ -733,61 +731,33 @@ body {
   font-size: 22px;
 
   transition: 0.3s ease;
+
+  z-index: 10;
 }
 
-.prev{
+.prev {
   left: 20px;
 }
 
-.next{
+.next {
   right: 20px;
 }
 
 .prev:hover,
-.next:hover{
-  background: rgba(0,0,0,0.7);
+.next:hover {
+  background: rgba(0, 0, 0, 0.7);
 }
 
 /* =========================
    CAPTION
 ========================= */
-
-.caption{
+.caption {
   text-align: center;
   margin-top: 15px;
 
   font-size: 22px;
   color: #222;
-}
-
-/* =========================
-   DOTS
-========================= */
-
-.dots{
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-
-  margin-top: 15px;
-}
-
-.dot{
-  width: 14px;
-  height: 14px;
-
-  border-radius: 50%;
-  background: #ccc;
-
-  cursor: pointer;
-
-  transition: 0.3s ease;
-}
-
-.dot.active{
-  background: #2d7cff;
-}
- 
+} 
 
 /* =========================
    RESPONSIVE
@@ -819,7 +789,7 @@ body {
   }
 
   .featured-sections {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr 1fr);
   }
   .gallery-container {
     grid-template-columns: 1fr;
@@ -845,11 +815,11 @@ body {
   .slider-section {
     margin: 0;
   }
-  .slider-wrapper{
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-}
+  .slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 /* ========================= */
@@ -966,12 +936,12 @@ body {
   .container {
     grid-template-columns: 1fr 2fr;
   }
-   .slide img{
+  .slide img {
     height: 350px;
   }
 
   .prev,
-  .next{
+  .next {
     width: 45px;
     height: 45px;
     font-size: 18px;
