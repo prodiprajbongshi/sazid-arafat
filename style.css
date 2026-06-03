@@ -2017,8 +2017,8 @@ ul {
 }
 
 .contact-hero-content h1 {
-  font-size: 64px;
-  font-weight: 700;
+  font-size: 54px;
+  font-weight: 500;
   margin-bottom: 16px;
   letter-spacing: 2px;
 }
@@ -2811,7 +2811,7 @@ ul {
   }
 
   .faq-item summary {
-    padding: 18px 20px;
+    padding: 18px 10px;
     font-size: 16px;
   }
 
@@ -2821,7 +2821,7 @@ ul {
   }
 
   .faq-item summary::after {
-    right: 20px;
+    right: 10px;
   }
 }
 
@@ -2889,10 +2889,10 @@ ul {
     font-size: 32px;
   }
 
-  .footer-menu {
+  /* .footer-menu {
     flex-direction: column;
     gap: 14px;
-  }
+  } */
 
   /* About */
   .about-hero-content h1 {
@@ -2969,6 +2969,10 @@ ul {
     flex-direction: column;
     gap: 10px;
   }
+  .inner-container {
+ 
+  padding: 0 0px;
+}
 }
 
 /* ====================================================
