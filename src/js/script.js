@@ -97,3 +97,45 @@ sliders.forEach((slider) => {
   }
 
 });
+
+
+
+
+
+
+
+//work page counter
+const counters = document.querySelectorAll(".port-stat-num");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+
+      const counter = entry.target;
+      const target = +counter.dataset.target;
+      const suffix = counter.dataset.suffix || "+";
+
+      let current = 0;
+      const duration = 1000;
+      const increment = target / (duration / 32);
+
+      function updateCounter() {
+        current += increment;
+
+        if (current < target) {
+          counter.textContent = Math.ceil(current) + suffix;
+          requestAnimationFrame(updateCounter);
+        } else {
+          counter.textContent = target + suffix;
+        }
+      }
+
+      updateCounter();
+      observer.unobserve(counter);
+    });
+  },
+  { threshold: 0.5 }
+);
+
+counters.forEach(counter => observer.observe(counter));

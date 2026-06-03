@@ -29,24 +29,26 @@
     <!-- ========================= -->
     <!-- NAVBAR -->
     <!-- ========================= -->
-     <!-- NAVBAR -->
-      <nav class="navbar">
-        <div class="logo">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="./index.html" class="active">
           <h2>SAZID ARAFAT</h2>
-        </div>
+        </a>
+      </div>
 
-        <ul class="nav-links" id="navLinks">
-          <li><a href="./index.html" class="active">HOME</a></li>
-          <li><a href="./about.html">ABOUT</a></li>
-          <li><a href="./portfolio.html">PORTFOLIO</a></li>
-          <li><a href="./contact.html">CONTACT</a></li>
-        </ul>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./portfolio.html" class="active">WORKS</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
 
-        <!-- Mobile Menu -->
-        <div class="menu-btn" id="menuBtn" aria-label="Toggle navigation menu">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </nav>
+      <!-- Mobile Menu -->
+      <div class="menu-btn" id="menuBtn" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
 
     <!-- ========================= -->
     <!-- PORTFOLIO HERO -->
@@ -64,19 +66,24 @@
       <!-- Decorative stat strip -->
       <div class="port-stats">
         <div class="port-stat">
-          <span class="port-stat-num">300+</span>
+          <span class="port-stat-num" data-target="300">0+</span>
           <span class="port-stat-label">Published Reports</span>
         </div>
+
         <div class="port-stat">
-          <span class="port-stat-num">50+</span>
+          <span class="port-stat-num" data-target="50">0+</span>
           <span class="port-stat-label">TV Documentaries</span>
         </div>
+
         <div class="port-stat">
-          <span class="port-stat-num">30+</span>
+          <span class="port-stat-num" data-target="30">0+</span>
           <span class="port-stat-label">Exclusive Interviews</span>
         </div>
+
         <div class="port-stat">
-          <span class="port-stat-num">4M+</span>
+          <span class="port-stat-num" data-target="4" data-suffix="M+"
+            >0M+</span
+          >
           <span class="port-stat-label">Total Views</span>
         </div>
       </div>
@@ -90,45 +97,55 @@
         <span class="section-tag">Signature Work</span>
         <h2 class="section-heading">Featured Investigations</h2>
 
-        <div class="feat-inv-grid">
-          <!-- Investigation 1 (large) -->
-          <article class="feat-inv-card feat-inv-large">
-            <div class="feat-inv-video">
+        <div class="yt-grid">
+          <!-- Video Card 1 -->
+          <article class="yt-card">
+            <div class="yt-video">
               <iframe
                 src="https://www.youtube.com/embed/XGyBj_KOiHs"
-                title="অন্তর্বর্তী সরকারের এক বছর কতটা সফল"
+                title="অন্তর্বর্তী সরকারের এক বছর"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
-            <div class="feat-inv-body">
-              <div class="feat-inv-meta">
-                <span class="tag tag-red">INVESTIGATIVE</span>
-                <span class="pub-name">Ekhon TV</span>
-                <span class="pub-date">Aug 8, 2025</span>
+            <div class="yt-body">
+              <div class="yt-meta">
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Aug 8, 2025</span
+                >
+                <span class="tag tag-navy">GOVERNANCE</span>
               </div>
-              <h3 class="feat-inv-title">
+              <h3 class="yt-title">
                 অন্তর্বর্তী সরকারের এক বছর কতটা সফল, কতটা ব্যর্থ?
               </h3>
-              <p class="feat-inv-desc">
-                A comprehensive one-year audit of Bangladesh's interim
-                government — examining policy achievements, institutional
-                failures
+              <p class="yt-desc">
+                A year-in-review assessment of the interim government's
+                performance, drawing on expert opinion and public sentiment.
               </p>
               <a
                 href="https://www.youtube.com/watch?v=XGyBj_KOiHs"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn btn-sm"
-              >WATCH REPORT <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                class="yt-watch-btn"
+              >
+                <i class="fa-brands fa-youtube"></i> Watch on YouTube
+              </a>
             </div>
           </article>
 
-          <!-- Investigation 2 -->
-          <article class="feat-inv-card">
-            <div class="feat-inv-video">
+          <!-- Video Card 2 -->
+          <article class="yt-card">
+            <div class="yt-video">
               <iframe
                 src="https://www.youtube.com/embed/O4fnNcmAEwY"
                 title="জামিনে মুক্ত শিক্ষার্থী"
@@ -136,28 +153,29 @@
                 allowfullscreen
               ></iframe>
             </div>
-            <div class="feat-inv-body">
-              <div class="feat-inv-meta">
-                <span class="tag tag-navy">POLITICS</span>
-                <span class="pub-name">Ekhon TV</span>
-                <span class="pub-date">Aug 6, 2024</span>
+            <div class="yt-body">
+              <div class="yt-meta">
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Aug 6, 2024</span
+                >
+                <span class="tag tag-red">POLITICS</span>
               </div>
-              <h3 class="feat-inv-title">
-                জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা
-              </h3>
-              <p class="feat-inv-desc">
-                Ground-level coverage of the bail hearings and political
-                ramifications as student protesters and party leaders were
-                released after the uprising.
+              <h3 class="yt-title">জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা</h3>
+              <p class="yt-desc">
+                Live studio coverage as bail is granted to student protesters
+                and political party leaders following the July uprising.
               </p>
               <a
                 href="https://www.youtube.com/watch?v=O4fnNcmAEwY"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn btn-sm"
-              >WATCH REPORT <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                class="yt-watch-btn"
+              >
+                <i class="fa-brands fa-youtube"></i> Watch on YouTube
+              </a>
             </div>
           </article>
+ 
         </div>
       </div>
     </section>
@@ -342,13 +360,13 @@
     <!-- ========================= -->
     <!-- INTERVIEWS SECTION -->
     <!-- ========================= -->
-    <section class="port-section">
+    <!-- <section class="port-section">
       <div class="inner-container">
         <span class="section-tag">Conversations</span>
         <h2 class="section-heading">Exclusive Interviews</h2>
 
         <div class="interviews-grid">
-          <!-- Interview 1 -->
+           
           <article class="interview-card">
             <div class="interview-avatar">
               <i class="fa-solid fa-user-tie"></i>
@@ -369,11 +387,12 @@
                 today's Bangladesh.
               </p>
               <a href="#" class="read-link"
-                >Watch Interview <i class="fa-solid fa-chevron-right"></i></a>
+                >Watch Interview <i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
           </article>
 
-          <!-- Interview 2 -->
+           
           <article class="interview-card">
             <div class="interview-avatar">
               <i class="fa-solid fa-user-graduate"></i>
@@ -394,11 +413,12 @@
                 strategy, and the road ahead.
               </p>
               <a href="#" class="read-link"
-                >Watch Interview <i class="fa-solid fa-chevron-right"></i></a>
+                >Watch Interview <i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
           </article>
 
-          <!-- Interview 3 -->
+           
           <article class="interview-card">
             <div class="interview-avatar">
               <i class="fa-solid fa-tree"></i>
@@ -414,19 +434,18 @@
                 <span class="pub-date">November 2022</span>
               </p>
               <p class="interview-excerpt">
-                Bangladesh's foremost climate scientist discusses the COP27
-                Loss and Damage breakthrough, its meaning for the Global South,
-                and what is still missing from the international response.
+                Bangladesh's foremost climate scientist discusses the COP27 Loss
+                and Damage breakthrough, its meaning for the Global South, and
+                what is still missing from the international response.
               </p>
               <a href="#" class="read-link"
-                >Read Interview <i class="fa-solid fa-chevron-right"></i></a>
+                >Read Interview <i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
           </article>
         </div>
       </div>
-    </section>
-
-   
+    </section> -->
 
     <!-- ========================= -->
     <!-- POLITICS - রাজনীতি -->
@@ -444,14 +463,24 @@
                 src="https://www.youtube.com/embed/XGyBj_KOiHs"
                 title="অন্তর্বর্তী সরকারের এক বছর"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> Aug 8, 2025</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Aug 8, 2025</span
+                >
                 <span class="tag tag-navy">GOVERNANCE</span>
               </div>
               <h3 class="yt-title">
@@ -484,12 +513,12 @@
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> Aug 6, 2024</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Aug 6, 2024</span
+                >
                 <span class="tag tag-red">POLITICS</span>
               </div>
-              <h3 class="yt-title">
-                জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা
-              </h3>
+              <h3 class="yt-title">জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা</h3>
               <p class="yt-desc">
                 Live studio coverage as bail is granted to student protesters
                 and political party leaders following the July uprising.
@@ -512,17 +541,29 @@
                 src="https://www.youtube.com/embed/v5rc0jugn7k"
                 title="Cyclone damage report"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> Nov 7, 2022</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Nov 7, 2022</span
+                >
                 <span class="tag tag-green">CLIMATE</span>
               </div>
-              <h3 class="yt-title">বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা</h3>
+              <h3 class="yt-title">
+                বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা
+              </h3>
               <p class="yt-desc">
                 Exclusive on-location reporting from cyclone-struck villages,
                 with economic impact analysis and community testimonies.
@@ -545,17 +586,29 @@
                 src="https://www.youtube.com/embed/fUpxFX3sjVE"
                 title="Dhaka pollution report"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> May 30, 2023</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> May 30, 2023</span
+                >
                 <span class="tag tag-green">ENVIRONMENT</span>
               </div>
-              <h3 class="yt-title">দূষণের দুষ্টচক্রে রাজধানী, ভারসাম্য হারাচ্ছে প্রাণ-প্রকৃতি</h3>
+              <h3 class="yt-title">
+                দূষণের দুষ্টচক্রে রাজধানী, ভারসাম্য হারাচ্ছে প্রাণ-প্রকৃতি
+              </h3>
               <p class="yt-desc">
                 Dhaka's toxic air: sources, health consequences, and the
                 regulatory failures enabling the vicious cycle of pollution.
@@ -571,8 +624,6 @@
             </div>
           </article>
         </div>
-
-      
       </div>
     </section>
     <!-- ========================= -->
@@ -591,14 +642,24 @@
                 src="https://www.youtube.com/embed/XGyBj_KOiHs"
                 title="অন্তর্বর্তী সরকারের এক বছর"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> Aug 8, 2025</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Aug 8, 2025</span
+                >
                 <span class="tag tag-navy">GOVERNANCE</span>
               </div>
               <h3 class="yt-title">
@@ -631,12 +692,12 @@
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> Aug 6, 2024</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Aug 6, 2024</span
+                >
                 <span class="tag tag-red">POLITICS</span>
               </div>
-              <h3 class="yt-title">
-                জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা
-              </h3>
+              <h3 class="yt-title">জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা</h3>
               <p class="yt-desc">
                 Live studio coverage as bail is granted to student protesters
                 and political party leaders following the July uprising.
@@ -659,17 +720,29 @@
                 src="https://www.youtube.com/embed/v5rc0jugn7k"
                 title="Cyclone damage report"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> Nov 7, 2022</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Nov 7, 2022</span
+                >
                 <span class="tag tag-green">CLIMATE</span>
               </div>
-              <h3 class="yt-title">বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা</h3>
+              <h3 class="yt-title">
+                বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা
+              </h3>
               <p class="yt-desc">
                 Exclusive on-location reporting from cyclone-struck villages,
                 with economic impact analysis and community testimonies.
@@ -692,17 +765,29 @@
                 src="https://www.youtube.com/embed/fUpxFX3sjVE"
                 title="Dhaka pollution report"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> May 30, 2023</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> May 30, 2023</span
+                >
                 <span class="tag tag-green">ENVIRONMENT</span>
               </div>
-              <h3 class="yt-title">দূষণের দুষ্টচক্রে রাজধানী, ভারসাম্য হারাচ্ছে প্রাণ-প্রকৃতি</h3>
+              <h3 class="yt-title">
+                দূষণের দুষ্টচক্রে রাজধানী, ভারসাম্য হারাচ্ছে প্রাণ-প্রকৃতি
+              </h3>
               <p class="yt-desc">
                 Dhaka's toxic air: sources, health consequences, and the
                 regulatory failures enabling the vicious cycle of pollution.
@@ -718,16 +803,17 @@
             </div>
           </article>
         </div>
- 
       </div>
     </section>
-   
+
     <!--Climate & Environment - জলবায়ু ও পরিবেশ  -->
     <!-- ========================= -->
     <section class="port-section">
       <div class="inner-container">
         <span class="section-tag">Video Reports</span>
-        <h2 class="section-heading">Climate & Environment - জলবায়ু ও পরিবেশ</h2>
+        <h2 class="section-heading">
+          Climate & Environment - জলবায়ু ও পরিবেশ
+        </h2>
 
         <div class="yt-grid">
           <!-- Video Card 1 -->
@@ -737,14 +823,24 @@
                 src="https://www.youtube.com/embed/XGyBj_KOiHs"
                 title="অন্তর্বর্তী সরকারের এক বছর"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> Aug 8, 2025</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Aug 8, 2025</span
+                >
                 <span class="tag tag-navy">GOVERNANCE</span>
               </div>
               <h3 class="yt-title">
@@ -777,12 +873,12 @@
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> Aug 6, 2024</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Aug 6, 2024</span
+                >
                 <span class="tag tag-red">POLITICS</span>
               </div>
-              <h3 class="yt-title">
-                জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা
-              </h3>
+              <h3 class="yt-title">জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা</h3>
               <p class="yt-desc">
                 Live studio coverage as bail is granted to student protesters
                 and political party leaders following the July uprising.
@@ -805,17 +901,29 @@
                 src="https://www.youtube.com/embed/v5rc0jugn7k"
                 title="Cyclone damage report"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> Nov 7, 2022</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Nov 7, 2022</span
+                >
                 <span class="tag tag-green">CLIMATE</span>
               </div>
-              <h3 class="yt-title">বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা</h3>
+              <h3 class="yt-title">
+                বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা
+              </h3>
               <p class="yt-desc">
                 Exclusive on-location reporting from cyclone-struck villages,
                 with economic impact analysis and community testimonies.
@@ -838,17 +946,29 @@
                 src="https://www.youtube.com/embed/fUpxFX3sjVE"
                 title="Dhaka pollution report"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> May 30, 2023</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> May 30, 2023</span
+                >
                 <span class="tag tag-green">ENVIRONMENT</span>
               </div>
-              <h3 class="yt-title">দূষণের দুষ্টচক্রে রাজধানী, ভারসাম্য হারাচ্ছে প্রাণ-প্রকৃতি</h3>
+              <h3 class="yt-title">
+                দূষণের দুষ্টচক্রে রাজধানী, ভারসাম্য হারাচ্ছে প্রাণ-প্রকৃতি
+              </h3>
               <p class="yt-desc">
                 Dhaka's toxic air: sources, health consequences, and the
                 regulatory failures enabling the vicious cycle of pollution.
@@ -864,7 +984,6 @@
             </div>
           </article>
         </div>
- 
       </div>
     </section>
     <!--কৃষি/ অর্থনীতি -->
@@ -882,14 +1001,24 @@
                 src="https://www.youtube.com/embed/XGyBj_KOiHs"
                 title="অন্তর্বর্তী সরকারের এক বছর"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> Aug 8, 2025</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Aug 8, 2025</span
+                >
                 <span class="tag tag-navy">GOVERNANCE</span>
               </div>
               <h3 class="yt-title">
@@ -922,12 +1051,12 @@
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> Aug 6, 2024</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Aug 6, 2024</span
+                >
                 <span class="tag tag-red">POLITICS</span>
               </div>
-              <h3 class="yt-title">
-                জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা
-              </h3>
+              <h3 class="yt-title">জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা</h3>
               <p class="yt-desc">
                 Live studio coverage as bail is granted to student protesters
                 and political party leaders following the July uprising.
@@ -950,17 +1079,29 @@
                 src="https://www.youtube.com/embed/v5rc0jugn7k"
                 title="Cyclone damage report"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> Nov 7, 2022</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Nov 7, 2022</span
+                >
                 <span class="tag tag-green">CLIMATE</span>
               </div>
-              <h3 class="yt-title">বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা</h3>
+              <h3 class="yt-title">
+                বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা
+              </h3>
               <p class="yt-desc">
                 Exclusive on-location reporting from cyclone-struck villages,
                 with economic impact analysis and community testimonies.
@@ -983,17 +1124,29 @@
                 src="https://www.youtube.com/embed/fUpxFX3sjVE"
                 title="Dhaka pollution report"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> May 30, 2023</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> May 30, 2023</span
+                >
                 <span class="tag tag-green">ENVIRONMENT</span>
               </div>
-              <h3 class="yt-title">দূষণের দুষ্টচক্রে রাজধানী, ভারসাম্য হারাচ্ছে প্রাণ-প্রকৃতি</h3>
+              <h3 class="yt-title">
+                দূষণের দুষ্টচক্রে রাজধানী, ভারসাম্য হারাচ্ছে প্রাণ-প্রকৃতি
+              </h3>
               <p class="yt-desc">
                 Dhaka's toxic air: sources, health consequences, and the
                 regulatory failures enabling the vicious cycle of pollution.
@@ -1009,7 +1162,6 @@
             </div>
           </article>
         </div>
- 
       </div>
     </section>
     <!--নাগরিক সমস্যা -->
@@ -1027,14 +1179,24 @@
                 src="https://www.youtube.com/embed/XGyBj_KOiHs"
                 title="অন্তর্বর্তী সরকারের এক বছর"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> Aug 8, 2025</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Aug 8, 2025</span
+                >
                 <span class="tag tag-navy">GOVERNANCE</span>
               </div>
               <h3 class="yt-title">
@@ -1067,12 +1229,12 @@
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> Aug 6, 2024</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Aug 6, 2024</span
+                >
                 <span class="tag tag-red">POLITICS</span>
               </div>
-              <h3 class="yt-title">
-                জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা
-              </h3>
+              <h3 class="yt-title">জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা</h3>
               <p class="yt-desc">
                 Live studio coverage as bail is granted to student protesters
                 and political party leaders following the July uprising.
@@ -1095,17 +1257,29 @@
                 src="https://www.youtube.com/embed/v5rc0jugn7k"
                 title="Cyclone damage report"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> Nov 7, 2022</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> Nov 7, 2022</span
+                >
                 <span class="tag tag-green">CLIMATE</span>
               </div>
-              <h3 class="yt-title">বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা</h3>
+              <h3 class="yt-title">
+                বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা
+              </h3>
               <p class="yt-desc">
                 Exclusive on-location reporting from cyclone-struck villages,
                 with economic impact analysis and community testimonies.
@@ -1128,17 +1302,29 @@
                 src="https://www.youtube.com/embed/fUpxFX3sjVE"
                 title="Dhaka pollution report"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
             <div class="yt-body">
               <div class="yt-meta">
-                <span class="yt-date"><i class="fa-regular fa-calendar"></i> May 30, 2023</span>
+                <span class="yt-date"
+                  ><i class="fa-regular fa-calendar"></i> May 30, 2023</span
+                >
                 <span class="tag tag-green">ENVIRONMENT</span>
               </div>
-              <h3 class="yt-title">দূষণের দুষ্টচক্রে রাজধানী, ভারসাম্য হারাচ্ছে প্রাণ-প্রকৃতি</h3>
+              <h3 class="yt-title">
+                দূষণের দুষ্টচক্রে রাজধানী, ভারসাম্য হারাচ্ছে প্রাণ-প্রকৃতি
+              </h3>
               <p class="yt-desc">
                 Dhaka's toxic air: sources, health consequences, and the
                 regulatory failures enabling the vicious cycle of pollution.
@@ -1154,10 +1340,8 @@
             </div>
           </article>
         </div>
- 
       </div>
     </section>
-   
 
     <!-- ========================= -->
     <!-- FOOTER -->
@@ -1181,19 +1365,22 @@
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
-          ><i class="fa-brands fa-facebook-f"></i></a>
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
           <a
             href="https://www.youtube.com/@sazidarafatudoa"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="YouTube"
-          ><i class="fa-brands fa-youtube"></i></a>
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
           <a
             href="https://www.linkedin.com/in/sazid-arafat/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-          ><i class="fa-brands fa-linkedin-in"></i></a>
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
         </div>
       </div>
 
@@ -1202,8 +1389,7 @@
       </div>
     </footer>
 
-
-        <!-- JS FILE -->
+    <!-- JS FILE -->
     <script src="./src/js/script.js"></script>
   </body>
 </html>
