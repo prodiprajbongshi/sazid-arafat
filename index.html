@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sazid ARAFAT</title>
+    <title>Sazid Arafat — Investigative Journalist</title>
+    <meta
+      name="description"
+      content="Sazid Arafat is a Bangladeshi investigative journalist and climate reporter, staff reporter at Ekhon TV. Explore his work in journalism, TV reports, and special investigations."
+    />
 
     <!-- CSS File -->
     <link rel="stylesheet" href="./style.css" />
@@ -22,23 +26,27 @@
   </head>
 
   <body>
-    <!-- HEADER -->
+
+    <!-- ========================= -->
+    <!-- HEADER (HERO — UNCHANGED) -->
+    <!-- ========================= -->
     <header class="header">
+
       <!-- NAVBAR -->
       <nav class="navbar">
         <div class="logo">
           <h2>SAZID ARAFAT</h2>
         </div>
 
-        <ul class="nav-links">
-          <li><a href="#" class="active">HOME</a></li>
-          <li><a href="#">PORTFOLIO</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">CONTACT</a></li>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="./index.html" class="active">HOME</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./portfolio.html">PORTFOLIO</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
         </ul>
 
         <!-- Mobile Menu -->
-        <div class="menu-btn">
+        <div class="menu-btn" id="menuBtn" aria-label="Toggle navigation menu">
           <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
@@ -51,7 +59,7 @@
 
           <h2>
             INVESTIGATIVE JOURNALIST <br />
-            CLIMATE & SPECIAL REPORTS
+            CLIMATE &amp; SPECIAL REPORTS
           </h2>
 
           <p>
@@ -59,396 +67,591 @@
             staff reporter at Ekhon TV.
           </p>
 
-          <a href="#" class="btn">VIEW PORTFOLIO</a>
+          <a href="./portfolio.html" class="btn">VIEW PORTFOLIO</a>
         </div>
       </div>
     </header>
 
-    <!-- recent work section -->
-    <section>
-      <div class="recent-work">
-        <iframe
-          src="https://www.youtube.com/embed/xMm5pl8DrL0?si=GQVrtDq1kUIse3R2"
-          title="YouTube video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+    <!-- ======================================================
+         SECTION 1 — TICKER / HEADLINE STRIP
+    ====================================================== -->
+    <div class="ticker-bar">
+      <div class="ticker-label">
+        <i class="fa-solid fa-bolt"></i> LATEST
       </div>
-    </section>
-
-    <!-- FEATURED SECTION -->
-    <section class="featured-sections">
-      <!-- INVESTIGATIVE REPORTS -->
-      <div class="feature-card">
-        <h2>INVESTIGATIVE REPORTS</h2>
-
-        <div class="feature-item">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/XGyBj_KOiHs?si=U6Z0CT29hyOacz4B"
-            title="YouTube video player"
-            frameborder="0"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-              web-share;
-            "
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-
-          <div class="feature-content">
-            <a
-              target="_blank"
-              href="https://www.youtube.com/embed/XGyBj_KOiHs?si=U6Z0CT29hyOacz4B"
-            >
-              <h3>অন্তর্বর্তী সরকারের এক বছর কতটা সফল, কতটা ব্যর্থ?</h3>
-            </a>
-            <p>Aug 8, 2025</p>
-          </div>
-        </div>
-
-        <div class="feature-item">
-          <iframe
-            src="https://www.youtube.com/embed/O4fnNcmAEwY?si=NAbBnOyD36na3mu4"
-            title="YouTube video player"
-            frameborder="0"
-            allowfullscreen
-          >
-          </iframe>
-
-          <div class="feature-content">
-            <a
-              target="_blank"
-              href="https://www.youtube.com/embed/O4fnNcmAEwY?si=NAbBnOyD36na3mu4"
-              ><h3>জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা</h3>
-            </a>
-            <p>Aug 6, 2024</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- CLIMATE & ENVIRONMENT -->
-      <div class="feature-card">
-        <h2>CLIMATE & ENVIRONMENT</h2>
-
-        <div class="feature-item">
-          <iframe
-            src="https://www.youtube.com/embed/v5rc0jugn7k?si=7743NxiWSD8N93iL"
-            title="YouTube video player"
-            frameborder="0"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-              web-share;
-            "
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-
-          <div class="feature-content">
-            <a
-              href="https://www.youtube.com/embed/v5rc0jugn7k?si=7743NxiWSD8N93iL"
-              target="_blank"
-            >
-              <h3>বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা</h3>
-            </a>
-            <p>Nov 7, 2022</p>
-          </div>
-        </div>
-
-        <div class="feature-item">
-          <iframe
-            src="https://www.youtube.com/embed/fUpxFX3sjVE?si=5bT-LHYQxGz1Idm6"
-            title="YouTube video player"
-            frameborder="0"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-              web-share;
-            "
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-
-          <div class="feature-content">
-            <a
-              href="https://www.youtube.com/embed/fUpxFX3sjVE?si=5bT-LHYQxGz1Idm6"
-              target="_blank"
-            >
-              <h3>
-                দূষণের দুষ্টচক্রে রাজধানী, ভারসাম্য হারাচ্ছে প্রাণ-প্রকৃতি
-              </h3>
-            </a>
-            <p>May 30, 2023</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- TV & MULTIMEDIA -->
-      <div class="feature-card">
-        <h2>TV & MULTIMEDIA</h2>
-
-        <div class="tv-grid">
-          <iframe
-            src="https://www.youtube.com/embed/xMm5pl8DrL0"
-            title="YouTube video player"
-            frameborder="0"
-            allowfullscreen
-          >
-          </iframe>
-
-          <iframe
-            src="https://www.youtube.com/embed/xMm5pl8DrL0"
-            title="YouTube video player"
-            frameborder="0"
-            allowfullscreen
-          >
-          </iframe>
-
-          <iframe
-            src="https://www.youtube.com/embed/xMm5pl8DrL0"
-            title="YouTube video player"
-            frameborder="0"
-            allowfullscreen
-          >
-          </iframe>
-
-          <iframe
-            src="https://www.youtube.com/embed/xMm5pl8DrL0"
-            title="YouTube video player"
-            frameborder="0"
-            allowfullscreen
-          >
-          </iframe>
-        </div>
-
-        <p class="tv-text">
-          Investigative package on Fiverr session for Ekhon TV (252)
-        </p>
-      </div>
-    </section>
-
-    <!-- Photo gellary  -->
-    <section class="photo-gallery">
-      <div class="gallery-container">
-        <!-- Left Side -->
-        <div class="gallery-left">
-          <div class="gallery-item small">
-            <img src="./src/image/photogallary/picture1.jpg" alt="Photo 1" />
-          </div>
-
-          <div class="gallery-item small">
-            <img src="./src/image/photogallary/picture2.jpg" alt="Photo 2" />
-          </div>
-        </div>
-
-        <!-- Right Side -->
-        <div class="gallery-right">
-          <div class="gallery-item large">
-            <img src="./src/image/photogallary/picture3.jpg" alt="Photo 3" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- WORK Slider  -->
-    <section class="slider-wrapper">
-      <!-- slider 1  -->
-      <section class="slider-section">
-        <div class="slider" id="slider1">
-          <div class="slides">
-            <div class="slide active">
-              <img src="./src/image/work/img1.jpg" alt="work image" />
-            </div>
-
-            <div class="slide">
-              <img src="./src/image/work/img2.jpg" alt="work image" />
-            </div>
-
-            <div class="slide">
-              <img src="./src/image/work/img3.jpg" alt="work image" />
-            </div>
-
-            <div class="slide">
-              <img src="./src/image/work/img4.jpg" alt="work image" />
-            </div>
-
-            <div class="slide">
-              <img src="./src/image/work/img5.jpg" alt="work image" />
-            </div>
-          </div>
-
-          <!-- Buttons -->
-          <button class="prev">
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-
-          <button class="next">
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
-
-          
- 
-        </div>
-        <!-- Caption -->
-          <div class="caption">বইমেলা ২০২৫</div>
-      </section>
-      <!-- slider 2  -->
-      <section class="slider-section">
-        <div class="slider" id="slider2">
-          <div class="slides">
-            <div class="slide active">
-              <img src="./src/image/work/img6.jpg" alt="Work Image" />
-            </div>
-
-            <div class="slide">
-              <img src="./src/image/work/img7.jpg" alt="Work Image" />
-            </div>
-
-            <div class="slide">
-              <img src="./src/image/work/img8.jpg" alt="Work Image" />
-            </div>
-            <div class="slide">
-              <img src="./src/image/work/img9.jpg" alt="Work Image" />
-            </div>
-          </div>
-
-          <!-- Buttons -->
-          <button class="prev">
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-
-          <button class="next">
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
-        </div>
-        <div class="">
-              <!-- Caption -->
-          <div class="caption">চিলমারীর বন্দরে</div>
-        </div>
-      </section>
-    </section>
-
-    <!-- CERTIFICATE SECTION  -->
-    <div class="container">
-      <!-- LEFT COLUMN -->
-      <div class="left-column">
-        <h2 class="certifications-title">Certifications</h2>
-
-        <div class="profile-section">
-          <img
-            src="./src/image/Profile.jpg"
-            alt="Profile"
-            class="profile-image"
-          />
-          <p class="profile-name">Sazid Arafat<br />INVESTIGATIVE JOURNALIST</p>
-        </div>
-
-        <p class="profile-description">
-          Sazid Arafat is a Bangladeshi journalist currently serving as a staff
-          reporter at Ekhon TV. In October 2024, he was appointed as a member of
-          the Bangladesh Journalists Welfare Trust, reflecting his active
-          involvement in supporting the welfare of fellow journalists.
-        </p>
-      </div>
-
-      <!-- CENTER COLUMN -->
-      <div class="center-column">
-        <h2 class="certificates-title">Certifications & Fellowships</h2>
-
-        <div class="certificates-grid">
-          <div class="certificate-item">
-            <img
-              src="./src/image/certificate/certificate1.jpeg"
-              alt="Certificate 1"
-              class="certificate-image"
-            />
-          </div>
-
-          <div class="certificate-item">
-            <img
-              src="./src/image/certificate/certificate2.jpeg"
-              alt="Certificate 2"
-              class="certificate-image"
-            />
-          </div>
-          <div class="certificate-item">
-            <img
-              src="./src/image/certificate/certificate3.jpeg"
-              alt="Certificate 2"
-              class="certificate-image"
-            />
-          </div>
-          <div class="certificate-item">
-            <img
-              src="./src/image/certificate/certificate4.jpeg"
-              alt="Certificate 2"
-              class="certificate-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <!-- RIGHT COLUMN -->
-      <div class="right-column">
-        <!-- ABOUT SECTION -->
-        <div class="about-section">
-          <h3 class="section-title">About</h3>
-          <h4 class="about-name">Sazid Arafat</h4>
-          <p class="about-description">
-            In October 2024, he was appointed as a member of the Bangladesh
-            Journalists Welfare Trust, reflecting his active involvement in
-            supporting the welfare of fellow journalists.
-          </p>
-        </div>
-
-        <!-- SOCIAL SECTION -->
-        <div class="social-section">
-          <h3 class="section-title">Social Link</h3>
-          <div class="socialIcons">
-            <a href="https://www.facebook.com/sazid.arafat" target="_blank">
-              <i class="fa-brands fa-square-facebook"></i>
-            </a>
-
-            <a href="https://www.youtube.com/@sazidarafatudoa" target="_blank">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/sazid-arafat/" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
+      <div class="ticker-track">
+        <span>অন্তর্বর্তী সরকারের এক বছর কতটা সফল, কতটা ব্যর্থ?</span>
+        <span>বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা</span>
+        <span>দূষণের দুষ্টচক্রে রাজধানী, ভারসাম্য হারাচ্ছে প্রাণ-প্রকৃতি</span>
+        <span>জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা</span>
+        <span>অন্তর্বর্তী সরকারের এক বছর কতটা সফল, কতটা ব্যর্থ?</span>
+        <span>বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা</span>
       </div>
     </div>
 
-    <!-- =========================
-     FOOTER SECTION
-========================= -->
+    <!-- ======================================================
+         SECTION 2 — FEATURED VIDEO (RECENT WORK)
+    ====================================================== -->
+    <section class="home-featured-video" aria-labelledby="featured-video-title">
+      <div class="home-inner">
+        <div class="home-section-header">
+          <div>
+            <span class="home-tag">Most Recent</span>
+            <h2 class="home-section-title" id="featured-video-title">
+              Featured Report
+            </h2>
+          </div>
+          <a href="./portfolio.html" class="home-view-all">
+            All Reports <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
 
+        <div class="featured-video-wrap">
+          <div class="featured-video-player">
+            <div class="video-16-9">
+              <iframe
+                src="https://www.youtube.com/embed/xMm5pl8DrL0?si=GQVrtDq1kUIse3R2"
+                title="Featured Report – Sazid Arafat"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="featured-video-meta">
+            <span class="fv-tag">
+              <i class="fa-solid fa-circle-play"></i> EKHON TV
+            </span>
+            <h3 class="fv-title">Latest Investigative Broadcast</h3>
+            <p class="fv-desc">
+              Tune into Sazid Arafat's most recent live TV report — covering the
+              stories that matter most to Bangladeshi society: governance,
+              climate, and accountability.
+            </p>
+            <ul class="fv-info">
+              <li><i class="fa-solid fa-tv"></i> Ekhon TV — National Broadcast</li>
+              <li><i class="fa-solid fa-user-tie"></i> Sazid Arafat, Staff Reporter</li>
+              <li><i class="fa-solid fa-film"></i> Investigative &amp; Special Report</li>
+            </ul>
+            <a
+              href="https://www.youtube.com/@sazidarafatudoa"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-sm"
+            >
+              <i class="fa-brands fa-youtube"></i>&nbsp; Subscribe on YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION 3 — BEAT CARDS (INVESTIGATIVE / CLIMATE / TV)
+    ====================================================== -->
+    <section class="home-beats" aria-labelledby="beats-title">
+      <div class="home-inner">
+        <div class="home-section-header">
+          <div>
+            <span class="home-tag">Reporting Beats</span>
+            <h2 class="home-section-title" id="beats-title">Selected Work</h2>
+          </div>
+          <a href="./portfolio.html" class="home-view-all">
+            Full Portfolio <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="beats-grid">
+
+          <!-- ── BEAT 1: INVESTIGATIVE REPORTS ── -->
+          <div class="beat-card">
+            <div class="beat-card-header">
+              <div class="beat-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div>
+                <h3 class="beat-title">Investigative Reports</h3>
+                <span class="beat-count">2 reports</span>
+              </div>
+            </div>
+
+            <!-- Report item -->
+            <article class="beat-item">
+              <div class="beat-video">
+                <iframe
+                  src="https://www.youtube.com/embed/XGyBj_KOiHs?si=U6Z0CT29hyOacz4B"
+                  title="অন্তর্বর্তী সরকারের এক বছর কতটা সফল"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="beat-item-body">
+                <a
+                  href="https://www.youtube.com/watch?v=XGyBj_KOiHs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="beat-item-title"
+                >
+                  অন্তর্বর্তী সরকারের এক বছর কতটা সফল, কতটা ব্যর্থ?
+                </a>
+                <span class="beat-item-date">
+                  <i class="fa-regular fa-calendar"></i> Aug 8, 2025
+                </span>
+              </div>
+            </article>
+
+            <!-- Report item -->
+            <article class="beat-item">
+              <div class="beat-video">
+                <iframe
+                  src="https://www.youtube.com/embed/O4fnNcmAEwY?si=NAbBnOyD36na3mu4"
+                  title="জামিনে মুক্ত শিক্ষার্থী"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="beat-item-body">
+                <a
+                  href="https://www.youtube.com/watch?v=O4fnNcmAEwY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="beat-item-title"
+                >
+                  জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা
+                </a>
+                <span class="beat-item-date">
+                  <i class="fa-regular fa-calendar"></i> Aug 6, 2024
+                </span>
+              </div>
+            </article>
+          </div>
+
+          <!-- ── BEAT 2: CLIMATE & ENVIRONMENT ── -->
+          <div class="beat-card">
+            <div class="beat-card-header">
+              <div class="beat-icon beat-icon-green">
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+              <div>
+                <h3 class="beat-title">Climate &amp; Environment</h3>
+                <span class="beat-count">2 reports</span>
+              </div>
+            </div>
+
+            <article class="beat-item">
+              <div class="beat-video">
+                <iframe
+                  src="https://www.youtube.com/embed/v5rc0jugn7k?si=7743NxiWSD8N93iL"
+                  title="বছরে ঘূর্ণিঝড়েই ক্ষতি"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="beat-item-body">
+                <a
+                  href="https://www.youtube.com/watch?v=v5rc0jugn7k"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="beat-item-title"
+                >
+                  বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা
+                </a>
+                <span class="beat-item-date">
+                  <i class="fa-regular fa-calendar"></i> Nov 7, 2022
+                </span>
+              </div>
+            </article>
+
+            <article class="beat-item">
+              <div class="beat-video">
+                <iframe
+                  src="https://www.youtube.com/embed/fUpxFX3sjVE?si=5bT-LHYQxGz1Idm6"
+                  title="দূষণের দুষ্টচক্রে রাজধানী"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="beat-item-body">
+                <a
+                  href="https://www.youtube.com/watch?v=fUpxFX3sjVE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="beat-item-title"
+                >
+                  দূষণের দুষ্টচক্রে রাজধানী, ভারসাম্য হারাচ্ছে প্রাণ-প্রকৃতি
+                </a>
+                <span class="beat-item-date">
+                  <i class="fa-regular fa-calendar"></i> May 30, 2023
+                </span>
+              </div>
+            </article>
+          </div>
+
+          <!-- ── BEAT 3: TV & MULTIMEDIA ── -->
+          <div class="beat-card">
+            <div class="beat-card-header">
+              <div class="beat-icon beat-icon-red">
+                <i class="fa-solid fa-tv"></i>
+              </div>
+              <div>
+                <h3 class="beat-title">TV &amp; Multimedia</h3>
+                <span class="beat-count">4 broadcasts</span>
+              </div>
+            </div>
+
+            <div class="beat-tv-grid">
+              <iframe
+                src="https://www.youtube.com/embed/xMm5pl8DrL0"
+                title="TV Report 1"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/XGyBj_KOiHs"
+                title="TV Report 2"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/v5rc0jugn7k"
+                title="TV Report 3"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/fUpxFX3sjVE"
+                title="TV Report 4"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <p class="beat-tv-caption">
+              <i class="fa-solid fa-circle-info"></i>
+              Investigative packages and live segments produced for Ekhon TV (Channel 252)
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION 4 — STATS STRIP
+    ====================================================== -->
+    <div class="home-stats-strip">
+      <div class="hss-item">
+        <span class="hss-num">8+</span>
+        <span class="hss-label">Years in Journalism</span>
+      </div>
+      <div class="hss-divider"></div>
+      <div class="hss-item">
+        <span class="hss-num">300+</span>
+        <span class="hss-label">Published Reports</span>
+      </div>
+      <div class="hss-divider"></div>
+      <div class="hss-item">
+        <span class="hss-num">12+</span>
+        <span class="hss-label">Awards &amp; Fellowships</span>
+      </div>
+      <div class="hss-divider"></div>
+      <div class="hss-item">
+        <span class="hss-num">4M+</span>
+        <span class="hss-label">Total Views</span>
+      </div>
+    </div>
+
+    <!-- ======================================================
+         SECTION 5 — PHOTO GALLERY
+    ====================================================== -->
+    <section class="home-gallery" aria-labelledby="gallery-title">
+      <div class="home-inner">
+        <div class="home-section-header">
+          <div>
+            <span class="home-tag">Visual Stories</span>
+            <h2 class="home-section-title" id="gallery-title">
+              Field Photography
+            </h2>
+          </div>
+          <a href="./portfolio.html" class="home-view-all">
+            View All <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="home-gallery-grid">
+          <!-- Left column — two stacked -->
+          <div class="hg-col-left">
+            <div class="hg-item hg-item-sm">
+              <img
+                src="./src/image/photogallary/picture1.jpg"
+                alt="Field photography – Sazid Arafat"
+                loading="lazy"
+              />
+              <div class="hg-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+            </div>
+            <div class="hg-item hg-item-sm">
+              <img
+                src="./src/image/photogallary/picture2.jpg"
+                alt="Field photography – Sazid Arafat"
+                loading="lazy"
+              />
+              <div class="hg-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right column — one large -->
+          <div class="hg-col-right">
+            <div class="hg-item hg-item-lg">
+              <img
+                src="./src/image/photogallary/picture3.jpg"
+                alt="Field photography – Sazid Arafat"
+                loading="lazy"
+              />
+              <div class="hg-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION 6 — WORK SLIDERS
+    ====================================================== -->
+    <section class="home-sliders" aria-labelledby="sliders-title">
+      <div class="home-inner">
+        <div class="home-section-header">
+          <div>
+            <span class="home-tag">On The Ground</span>
+            <h2 class="home-section-title" id="sliders-title">
+              Field Work
+            </h2>
+          </div>
+        </div>
+
+        <div class="sliders-row">
+
+          <!-- SLIDER 1 — বইমেলা ২০২৫ -->
+          <div class="home-slider-block">
+            <div class="home-slider" id="slider1">
+              <div class="slides">
+                <div class="slide active">
+                  <img src="./src/image/work/img1.jpg" alt="বইমেলা ২০২৫" />
+                </div>
+                <div class="slide">
+                  <img src="./src/image/work/img2.jpg" alt="বইমেলা ২০২৫" />
+                </div>
+                <div class="slide">
+                  <img src="./src/image/work/img3.jpg" alt="বইমেলা ২০২৫" />
+                </div>
+                <div class="slide">
+                  <img src="./src/image/work/img4.jpg" alt="বইমেলা ২০২৫" />
+                </div>
+                <div class="slide">
+                  <img src="./src/image/work/img5.jpg" alt="বইমেলা ২০২৫" />
+                </div>
+              </div>
+              <button class="prev" aria-label="Previous slide">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="next" aria-label="Next slide">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            <div class="home-slider-caption">
+              <i class="fa-solid fa-camera"></i>
+              <span>বইমেলা ২০২৫</span>
+            </div>
+          </div>
+
+          <!-- SLIDER 2 — চিলমারীর বন্দরে -->
+          <div class="home-slider-block">
+            <div class="home-slider" id="slider2">
+              <div class="slides">
+                <div class="slide active">
+                  <img src="./src/image/work/img6.jpg" alt="চিলমারীর বন্দরে" />
+                </div>
+                <div class="slide">
+                  <img src="./src/image/work/img7.jpg" alt="চিলমারীর বন্দরে" />
+                </div>
+                <div class="slide">
+                  <img src="./src/image/work/img8.jpg" alt="চিলমারীর বন্দরে" />
+                </div>
+                <div class="slide">
+                  <img src="./src/image/work/img9.jpg" alt="চিলমারীর বন্দরে" />
+                </div>
+              </div>
+              <button class="prev" aria-label="Previous slide">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="next" aria-label="Next slide">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            <div class="home-slider-caption">
+              <i class="fa-solid fa-camera"></i>
+              <span>চিলমারীর বন্দরে</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION 7 — PROFILE + CERTIFICATES + SOCIAL
+    ====================================================== -->
+    <section class="home-profile-certs" aria-labelledby="certs-title">
+      <div class="home-inner">
+
+        <div class="hpc-layout">
+
+          <!-- ── LEFT: Profile card ── -->
+          <aside class="hpc-profile-card">
+            <div class="hpc-photo-ring">
+              <img
+                src="./src/image/Profile.jpg"
+                alt="Sazid Arafat"
+                class="hpc-photo"
+              />
+            </div>
+            <h3 class="hpc-name">Sazid Arafat</h3>
+            <p class="hpc-role">Investigative Journalist</p>
+            <div class="hpc-divider"></div>
+            <p class="hpc-bio">
+              Bangladeshi journalist at Ekhon TV. In October 2024, appointed
+              member of the Bangladesh Journalists Welfare Trust — committed to
+              supporting fellow journalists across the country.
+            </p>
+            <div class="hpc-social">
+              <a
+                href="https://www.facebook.com/sazid.arafat"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                class="hpc-soc-btn hpc-fb"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@sazidarafatudoa"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                class="hpc-soc-btn hpc-yt"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sazid-arafat/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                class="hpc-soc-btn hpc-li"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+            <a href="./about.html" class="btn" style="width:100%; text-align:center;">
+              Full Profile
+            </a>
+          </aside>
+
+          <!-- ── CENTER: Certificates ── -->
+          <div class="hpc-certs">
+            <div class="home-section-header" style="margin-bottom:28px;">
+              <div>
+                <span class="home-tag">Credentials</span>
+                <h2 class="home-section-title" id="certs-title">
+                  Certifications &amp; Fellowships
+                </h2>
+              </div>
+            </div>
+
+            <div class="hpc-cert-grid">
+              <div class="hpc-cert-item">
+                <img
+                  src="./src/image/certificate/certificate1.jpeg"
+                  alt="Certificate 1"
+                  class="hpc-cert-img"
+                  loading="lazy"
+                />
+                <div class="hpc-cert-zoom">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div>
+              </div>
+              <div class="hpc-cert-item">
+                <img
+                  src="./src/image/certificate/certificate2.jpeg"
+                  alt="Certificate 2"
+                  class="hpc-cert-img"
+                  loading="lazy"
+                />
+                <div class="hpc-cert-zoom">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div>
+              </div>
+              <div class="hpc-cert-item">
+                <img
+                  src="./src/image/certificate/certificate3.jpeg"
+                  alt="Certificate 3"
+                  class="hpc-cert-img"
+                  loading="lazy"
+                />
+                <div class="hpc-cert-zoom">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div>
+              </div>
+              <div class="hpc-cert-item">
+                <img
+                  src="./src/image/certificate/certificate4.jpeg"
+                  alt="Certificate 4"
+                  class="hpc-cert-img"
+                  loading="lazy"
+                />
+                <div class="hpc-cert-zoom">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION 8 — CALL TO ACTION STRIP
+    ====================================================== -->
+    <section class="home-cta-strip">
+      <div class="home-inner hcs-inner">
+        <div class="hcs-text">
+          <h2>Have a story tip or want to collaborate?</h2>
+          <p>Every message is read personally — reach out today.</p>
+        </div>
+        <div class="hcs-actions">
+          <a href="./contact.html" class="btn">GET IN TOUCH</a>
+          <a href="./portfolio.html" class="btn btn-outline-light">VIEW ALL WORK</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         FOOTER
+    ====================================================== -->
     <footer class="footer">
       <div class="footer-container">
         <!-- Logo -->
@@ -458,22 +661,23 @@
 
         <!-- Footer Menu -->
         <ul class="footer-menu">
-          <li>
-            <a href="#">HOME</a>
-          </li>
-
-          <li>
-            <a href="#">PORTFOLIO</a>
-          </li>
-
-          <li>
-            <a href="#">ABOUT</a>
-          </li>
-
-          <li>
-            <a href="#">CONTACT</a>
-          </li>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./portfolio.html">PORTFOLIO</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
         </ul>
+
+        <div class="footer-social">
+          <a href="https://www.facebook.com/sazid.arafat" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.youtube.com/@sazidarafatudoa" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sazid-arafat/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
       </div>
 
       <!-- Bottom Text -->
