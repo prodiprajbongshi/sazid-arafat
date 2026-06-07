@@ -167,30 +167,67 @@
   <script>
     const politicsVideos = [
       {
+        embed: "https://www.youtube.com/embed/tmls0LDHNR0",
+        watch: "https://www.youtube.com/watch?v=tmls0LDHNR0",
+        date: "Oct 11, 2025",
+        tag: "POLITICS",
+        title: "সংবিধান সংস্কারে ভিন্নমত সত্ত্বেও জুলাই সনদ স্বাক্ষর অনুষ্ঠান",
+        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
+      },
+      {
         embed: "https://www.youtube.com/embed/XGyBj_KOiHs",
         watch: "https://www.youtube.com/watch?v=XGyBj_KOiHs",
         date: "Aug 8, 2025",
         tag: "GOVERNANCE",
-        tagClass: "tag-navy",
         title: "অন্তর্বর্তী সরকারের এক বছর কতটা সফল, কতটা ব্যর্থ?",
         desc: "A year-in-review assessment of the interim government's performance, drawing on expert opinion and public sentiment."
       },
       {
-        embed: "https://www.youtube.com/embed/8ggzFM6OJ1Y",
-        watch: "https://www.youtube.com/watch?v=8ggzFM6OJ1Y",
-        date: "Mar 2, 2025",
+        embed: "https://www.youtube.com/embed/8UroU5_dQWs",
+        watch: "https://www.youtube.com/watch?v=8UroU5_dQWs",
+        date: "Aug 8, 2025",
         tag: "POLITICS",
-        tagClass: "tag-red",
-        title: "জনসংযোগে ইফতার মাহফিল কতটা কার্যকর?",
-        desc: "Live studio coverage as bail is granted to student protesters and political party leaders following the July uprising."
+        title: "জনগণের রায় নিয়েই কল্যাণ রাষ্ট্র গড়ে তোলা হবে",
+        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
       },
       {
         embed: "https://www.youtube.com/embed/HnAJAFu-d08",
         watch: "https://www.youtube.com/watch?v=HnAJAFu-d08",
         date: "Aug 6, 2025",
         tag: "POLITICS",
-        tagClass: "tag-green",
         title: "বিএনপির র্যালিতে মির্জা ফখরুল, সালাহউদ্দিন ও অ্যানি",
+        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
+      },
+      {
+        embed: "https://www.youtube.com/embed/piXun4G4Oks",
+        watch: "https://www.youtube.com/watch?v=piXun4G4Oks",
+        date: "Jul 30, 2025",
+        tag: "POLITICS",
+        title: "সনদ অসম্পূরণ দাবি করে গণভোট চায় জামায়াত",
+        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
+      },
+      {
+        embed: "https://www.youtube.com/embed/Bl6l4s-eU5o",
+        watch: "https://www.youtube.com/watch?v=Bl6l4s-eU5o",
+        date: "May 6, 2025",
+        tag: "POLITICS",
+        title: "প্রিয় মাতৃভূমিতে ফিরলেন খালেদা জিয়া",
+        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
+      },
+      {
+        embed: "https://www.youtube.com/embed/8ggzFM6OJ1Y",
+        watch: "https://www.youtube.com/watch?v=8ggzFM6OJ1Y",
+        date: "Mar 2, 2025",
+        tag: "POLITICS",
+        title: "জনসংযোগে ইফতার মাহফিল কতটা কার্যকর?",
+        desc: "Live studio coverage as bail is granted to student protesters and political party leaders following the July uprising."
+      },
+      {
+        embed: "https://www.youtube.com/embed/O4fnNcmAEwY",
+        watch: "https://www.youtube.com/watch?v=O4fnNcmAEwY",
+        date: "Aug 6, 2024",
+        tag: "POLITICS",
+        title: "জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা",
         desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
       }
     ];
@@ -212,7 +249,7 @@
           <div class="yt-body">
             <div class="yt-meta">
               <span class="yt-date"><i class="fa-regular fa-calendar"></i> ${video.date}</span>
-              <span class="tag ${video.tagClass}">${video.tag}</span>
+              <span class="tag ">${video.tag}</span>
             </div>
             <h3 class="yt-title">${video.title}</h3>
             <p class="yt-desc">${video.desc}</p>
@@ -245,32 +282,63 @@
   <script>
     const expatriateVideos = [
       {
-        embed: "https://www.youtube.com/embed/XGyBj_KOiHs",
-        watch: "https://www.youtube.com/watch?v=XGyBj_KOiHs",
-        date: "Aug 8, 2025",
-        tag: "GOVERNANCE",
-        tagClass: "tag-navy",
-        title: "অন্তর্বর্তী সরকারের এক বছর কতটা সফল, কতটা ব্যর্থ?",
+        embed: "https://www.youtube.com/embed/t4HpN8DSPJ8",
+        watch: "https://www.youtube.com/watch?v=t4HpN8DSPJ8",
+        date: "Oct 17, 2025",
+        tag: "Expatriate",
+        title: "ফিরে এলাম শূন্য হাতে”— হাজারো নারীর ব্যর্থ অভিবাসন গল্প ",
         desc: "A year-in-review assessment of the interim government's performance, drawing on expert opinion and public sentiment."
       },
       {
-        embed: "https://www.youtube.com/embed/8ggzFM6OJ1Y",
-        watch: "https://www.youtube.com/watch?v=8ggzFM6OJ1Y",
-        date: "Mar 2, 2025",
-        tag: "POLITICS",
-        tagClass: "tag-red",
-        title: "জনসংযোগে ইফতার মাহফিল কতটা কার্যকর?",
+        embed: "https://www.youtube.com/embed/DSPDJfCEg8E",
+        watch: "https://www.youtube.com/watch?v=DSPDJfCEg8E",
+        date: "Jul 7, 2025",
+        tag: "Expatriate",
+        title: "জিম্মিদশা পেরিয়ে লিবিয়া ফেরত তরুণের ভয়াবহ গল্প",
         desc: "Live studio coverage as bail is granted to student protesters and political party leaders following the July uprising."
       },
       {
-        embed: "https://www.youtube.com/embed/HnAJAFu-d08",
-        watch: "https://www.youtube.com/watch?v=HnAJAFu-d08",
-        date: "Aug 6, 2025",
-        tag: "POLITICS",
-        tagClass: "tag-green",
-        title: "বিএনপির র্যালিতে মির্জা ফখরুল, সালাহউদ্দিন ও অ্যানি",
+        embed: "https://www.youtube.com/embed/gCTeFfCoBNI",
+        watch: "https://www.youtube.com/watch?v=gCTeFfCoBNI",
+        date: "Mar 31, 2025",
+        tag: "Expatriate",
+        title: "ভিনদেশি মুদ্রার যোগানে বদলে যাওয়া ব্রাহ্মণবাড়িয়া",
         desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-      }
+      },
+      {
+        embed: "https://www.youtube.com/embed/CZe9Fqn6Idg",
+        watch: "https://www.youtube.com/watch?v=CZe9Fqn6Idg",
+        date: " May 10, 2024",
+        tag: "Expatriate",
+        title: "রিক্রুটিং এজেন্সির দৌরাত্ম্যে বাড়তি খরচ",
+        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
+      },
+
+
+      {
+        embed: "https://www.youtube.com/embed/Ey7hFvq5KtU",
+        watch: "https://www.youtube.com/watch?v=Ey7hFvq5KtU",
+        date: " Apr 3, 2024",
+        tag: "Expatriate",
+        title: "গ্রামের টিনের ঘর অট্টালিকায় রূপ নেয় প্রবাসী আয়ে ",
+        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
+      },
+      {
+        embed: "https://www.youtube.com/embed/kxmKzh2t1js",
+        watch: "https://www.youtube.com/watch?v=kxmKzh2t1js",
+        date: " May 23, 2024",
+        tag: "Expatriate",
+        title: "প্রশিক্ষণ নিতে কেন আগ্রহ নেই বিদেশগামী কর্মীদের?  ",
+        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
+      },
+      {
+        embed: "https://www.youtube.com/embed/vhpev67iKfc",
+        watch: "https://www.youtube.com/watch?v=vhpev67iKfc",
+        date: " Sep 5, 2023 ",
+        tag: "Expatriate",
+        title: "নির্যাতনের দাগ নিয়ে দেশে ফিরলেন তারা ",
+        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
+      },
     ];
 
     const expatriateGrid = document.getElementById("expatriate-grid");
@@ -290,7 +358,7 @@
           <div class="yt-body">
             <div class="yt-meta">
               <span class="yt-date"><i class="fa-regular fa-calendar"></i> ${video.date}</span>
-              <span class="tag ${video.tagClass}">${video.tag}</span>
+              <span class="tag ">${video.tag}</span>
             </div>
             <h3 class="yt-title">${video.title}</h3>
             <p class="yt-desc">${video.desc}</p>
@@ -548,8 +616,8 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-logo">
-        <a href="./index.html">   
-         <h2>SAZID ARAFAT</h2>
+        <a href="./index.html">
+          <h2>SAZID ARAFAT</h2>
         </a>
       </div>
 
