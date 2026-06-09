@@ -89,7 +89,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 8%;
+  padding: 18px 9%;
   background: var(--color-navy);
   border-bottom: 3px solid var(--color-gold);
   position: fixed;
@@ -799,7 +799,7 @@ ul {
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: auto;
   padding: 35px 20px;
   display: flex;
@@ -1194,15 +1194,13 @@ ul {
   background: rgba(255,255,255,0.65);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-
   border: 1px solid rgba(255,255,255,0.5);
   border-radius: 24px;
   padding: 30px;
-
   box-shadow:
     0 10px 30px rgba(0,0,0,0.08);
-
   transition: all .4s ease;
+  cursor: pointer;
 }
 
 /* Hover Effect */
@@ -1351,6 +1349,7 @@ ul {
     border-color var(--transition),
     box-shadow var(--transition),
     transform var(--transition);
+    cursor: pointer;
 }
 
 .edu-card:hover {
@@ -1505,6 +1504,7 @@ ul {
     box-shadow var(--transition),
     transform var(--transition);
   border-top: 3px solid var(--color-gold);
+  cursor: pointer;
 }
 
 .award-card:hover {
@@ -1586,6 +1586,7 @@ ul {
   flex-direction: column;
   align-items: center;
   gap: 12px;
+  cursor: pointer;
 }
 
 .pub-card i {
