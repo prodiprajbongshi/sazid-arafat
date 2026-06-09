@@ -89,66 +89,79 @@
       <h2 class="section-heading">Featured Investigations</h2>
 
       <div class="yt-grid" id="featured-grid">
-        <!-- Cards rendered by JavaScript below -->
+        <!-- Featured Card 1 -->
+        <article class="yt-card featured-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/XGyBj_KOiHs"
+              title="অন্তর্বর্তী সরকারের এক বছর কতটা সফল, কতটা ব্যর্থ?" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date">
+                <i class="fa-regular fa-calendar"></i> Aug 8, 2025
+              </span>
+              <span class="tag tag-navy">Interim Government</span>
+            </div>
+
+            <h3 class="yt-title">
+              অন্তর্বর্তী সরকারের এক বছর কতটা সফল, কতটা ব্যর্থ?
+            </h3>
+
+            <p class="yt-desc">
+              গণঅভ্যুত্থান পরবর্তী ঘটনাবহুল এক বছর পার করলো অন্তর্বর্তী সরকার। নানা ষড়যন্ত্র আর দাবি-আন্দোলনের মুখে
+              কতটা অর্জন তাদের? সরকারের পক্ষে সফলতার গল্প তুলে ধরা হলেও রাজনৈতিক দলগুলোর মন্তব্য, আশার ঝুলি পূর্ণ করতে
+              পারেনি অন্তর্বর্তী সরকার। আর বিশ্লেষকরা বলছেন, আইনশৃঙ্খলার উন্নয়ন ঘটানোর পাশাপাশি সুষ্ঠু নির্বাচন দেয়াই
+              সরকারের সামনে প্রধান চ্যালেঞ্জ।
+            </p>
+
+            <a href="https://www.youtube.com/watch?v=XGyBj_KOiHs" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <!-- Featured Card 2 -->
+        <article class="yt-card featured-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/O4fnNcmAEwY" title="জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date">
+                <i class="fa-regular fa-calendar"></i> Aug 6, 2024
+              </span>
+              <span class="tag tag-red">POLITICS</span>
+            </div>
+
+            <h3 class="yt-title">
+              জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা
+            </h3>
+
+            <p class="yt-desc">
+              Live studio coverage as bail is granted to student protesters and political party leaders following the
+              July uprising.
+            </p>
+
+            <a href="https://www.youtube.com/watch?v=O4fnNcmAEwY" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <script>
-    const featuredVideos = [
-      {
-        embed: "https://www.youtube.com/embed/XGyBj_KOiHs",
-        watch: "https://www.youtube.com/watch?v=XGyBj_KOiHs",
-        date: "Aug 8, 2025",
-        tag: "Interim Government",
-        tagClass: "tag-navy",
-        title: "অন্তর্বর্তী সরকারের এক বছর কতটা সফল, কতটা ব্যর্থ?",
-        desc: "গণঅভ্যুত্থান পরবর্তী ঘটনাবহুল এক বছর পার করলো অন্তর্বর্তী সরকার। নানা ষড়যন্ত্র আর দাবি-আন্দোলনের মুখে কতটা অর্জন তাদের? সরকারের পক্ষে সফলতার গল্প তুলে ধরা হলেও রাজনৈতিক দলগুলোর মন্তব্য, আশার ঝুলি পূর্ণ করতে পারেনি অন্তর্বর্তী সরকার। আর বিশ্লেষকরা বলছেন, আইনশৃঙ্খলার উন্নয়ন ঘটানোর পাশাপাশি সুষ্ঠু নির্বাচন দেয়াই সরকারের সামনে প্রধান চ্যালেঞ্জ।"
-      },
-      {
-        embed: "https://www.youtube.com/embed/O4fnNcmAEwY",
-        watch: "https://www.youtube.com/watch?v=O4fnNcmAEwY",
-        date: "Aug 6, 2024",
-        tag: "POLITICS",
-        tagClass: "tag-red",
-        title: "জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা",
-        desc: "Live studio coverage as bail is granted to student protesters and political party leaders following the July uprising."
-      }
-    ];
-
-    const featuredGrid = document.getElementById("featured-grid");
-
-    featuredGrid.innerHTML = featuredVideos.map(video => `
-      <article class="yt-card">
-        <div class="yt-video">
-          <iframe
-            src="${video.embed}"
-            title="${video.title}"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="yt-body">
-          <div class="yt-meta">
-            <span class="yt-date"><i class="fa-regular fa-calendar"></i> ${video.date}</span>
-            <span class="tag  ">${video.tag}</span>
-          </div>
-          <h3 class="yt-title">${video.title}</h3>
-          <p class="yt-desc">${video.desc}</p>
-          <a
-            href="${video.watch}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="yt-watch-btn"
-          >
-            <i class="fa-brands fa-youtube"></i> Watch on YouTube
-          </a>
-        </div>
-      </article>
-    `).join("");
-  </script>
 
   <!-- ========================= -->
   <!-- POLITICS - রাজনীতি -->
@@ -158,113 +171,201 @@
       <span class="section-tag">Video Reports</span>
       <h2 class="section-heading">POLITICS - রাজনীতি</h2>
 
-      <div class="yt-grid" id="politics-grid">
-        <!-- Cards rendered by JavaScript below -->
-      </div>
-    </div>
-  </section>
+      <div class="yt-grid">
 
-  <script>
-    const politicsVideos = [
-      {
-        embed: "https://www.youtube.com/embed/tmls0LDHNR0",
-        watch: "https://www.youtube.com/watch?v=tmls0LDHNR0",
-        date: "Oct 11, 2025",
-        tag: "July Charter Signing",
-        title: "সংবিধান সংস্কারে ভিন্নমত সত্ত্বেও জুলাই সনদ স্বাক্ষর অনুষ্ঠান",
-        desc: "সংবিধান সংস্কারে ভিন্নমত সত্ত্বেও জুলাই সনদ স্বাক্ষর অনুষ্ঠান"
-      },
-      {
-        embed: "https://www.youtube.com/embed/XGyBj_KOiHs",
-        watch: "https://www.youtube.com/watch?v=XGyBj_KOiHs",
-        date: "Aug 8, 2025",
-        tag: "Interim Government",
-        title: "অন্তর্বর্তী সরকারের এক বছর কতটা সফল, কতটা ব্যর্থ?",
-        desc: "গণঅভ্যুত্থান পরবর্তী ঘটনাবহুল এক বছর পার করলো অন্তর্বর্তী সরকার। নানা ষড়যন্ত্র আর দাবি-আন্দোলনের মুখে কতটা অর্জন তাদের? সরকারের পক্ষে সফলতার গল্প তুলে ধরা হলেও রাজনৈতিক দলগুলোর মন্তব্য, আশার ঝুলি পূর্ণ করতে পারেনি অন্তর্বর্তী সরকার। আর বিশ্লেষকরা বলছেন, আইনশৃঙ্খলার উন্নয়ন ঘটানোর পাশাপাশি সুষ্ঠু নির্বাচন দেয়াই সরকারের সামনে প্রধান চ্যালেঞ্জ।"
-      },
-      {
-        embed: "https://www.youtube.com/embed/8UroU5_dQWs",
-        watch: "https://www.youtube.com/watch?v=8UroU5_dQWs",
-        date: "Aug 8, 2025",
-        tag: "POLITICS",
-        title: "জনগণের রায় নিয়েই কল্যাণ রাষ্ট্র গড়ে তোলা হবে",
-        desc: "জনগণের রায় নিয়েই কল্যাণ রাষ্ট্র গড়ে তোলা হবে"
-      },
-      {
-        embed: "https://www.youtube.com/embed/HnAJAFu-d08",
-        watch: "https://www.youtube.com/watch?v=HnAJAFu-d08",
-        date: "Aug 6, 2025",
-        tag: "POLITICS",
-        title: "বিএনপির র্যালিতে মির্জা ফখরুল, সালাহউদ্দিন ও অ্যানি",
-        desc: "বিএনপির র‌্যালিতে মির্জা ফখরুল, সালাহউদ্দিন ও অ্যানি"
-      },
-      {
-        embed: "https://www.youtube.com/embed/piXun4G4Oks",
-        watch: "https://www.youtube.com/watch?v=piXun4G4Oks",
-        date: "Jul 30, 2025",
-        tag: "July Proclamation",
-        title: "সনদ অসম্পূরণ দাবি করে গণভোট চায় জামায়াত",
-        desc: "সনদ অসম্পূরণ দাবি করে গণভোট চায় জামায়াত"
-      },
-      {
-        embed: "https://www.youtube.com/embed/Bl6l4s-eU5o",
-        watch: "https://www.youtube.com/watch?v=Bl6l4s-eU5o",
-        date: "May 6, 2025",
-        tag: "Khaleda Zia",
-        title: "প্রিয় মাতৃভূমিতে ফিরলেন খালেদা জিয়া",
-        desc: "প্রিয় মাতৃভূমিতে ফিরলেন খালেদা জিয়া"
-      },
-      {
-        embed: "https://www.youtube.com/embed/8ggzFM6OJ1Y",
-        watch: "https://www.youtube.com/watch?v=8ggzFM6OJ1Y",
-        date: "Mar 2, 2025",
-        tag: "Political Iftar Party",
-        title: "জনসংযোগে ইফতার মাহফিল কতটা কার্যকর?",
-        desc: "জনসংযোগে ইফতার মাহফিল কতটা কার্যকর?"
-      },
-      {
-        embed: "https://www.youtube.com/embed/O4fnNcmAEwY",
-        watch: "https://www.youtube.com/watch?v=O4fnNcmAEwY",
-        date: "Aug 6, 2024",
-        tag: "POLITICS",
-        title: "জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা",
-        desc: "জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা"
-      }
-    ];
-
-    const politicsGrid = document.getElementById("politics-grid");
-
-    politicsGrid.innerHTML = politicsVideos.map(video => `
+        <!-- Card 1 -->
         <article class="yt-card">
           <div class="yt-video">
-            <iframe
-              src="${video.embed}"
-              title="${video.title}"
-              frameborder="0"
+            <iframe src="https://www.youtube.com/embed/tmls0LDHNR0"
+              title="সংবিধান সংস্কারে ভিন্নমত সত্ত্বেও জুলাই সনদ স্বাক্ষর অনুষ্ঠান" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
           </div>
           <div class="yt-body">
             <div class="yt-meta">
-              <span class="yt-date"><i class="fa-regular fa-calendar"></i> ${video.date}</span>
-              <span class="tag ">${video.tag}</span>
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Oct 11, 2025</span>
+              <span class="tag">July Charter Signing</span>
             </div>
-            <h3 class="yt-title">${video.title}</h3>
-            <p class="yt-desc">${video.desc}</p>
-            <a
-              href="${video.watch}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="yt-watch-btn"
-            >
+            <h3 class="yt-title">সংবিধান সংস্কারে ভিন্নমত সত্ত্বেও জুলাই সনদ স্বাক্ষর অনুষ্ঠান</h3>
+            <p class="yt-desc">সংবিধান সংস্কারে ভিন্নমত সত্ত্বেও জুলাই সনদ স্বাক্ষর অনুষ্ঠান</p>
+            <a href="https://www.youtube.com/watch?v=tmls0LDHNR0" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
               <i class="fa-brands fa-youtube"></i> Watch on YouTube
             </a>
           </div>
         </article>
-      `).join("");
-  </script>
+
+        <!-- Card 2 -->
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/XGyBj_KOiHs"
+              title="অন্তর্বর্তী সরকারের এক বছর কতটা সফল, কতটা ব্যর্থ?" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Aug 8, 2025</span>
+              <span class="tag">Interim Government</span>
+            </div>
+            <h3 class="yt-title">অন্তর্বর্তী সরকারের এক বছর কতটা সফল, কতটা ব্যর্থ?</h3>
+            <p class="yt-desc">
+              গণঅভ্যুত্থান পরবর্তী ঘটনাবহুল এক বছর পার করলো অন্তর্বর্তী সরকার। নানা ষড়যন্ত্র আর দাবি-আন্দোলনের মুখে কতটা
+              অর্জন তাদের? সরকারের পক্ষে সফলতার গল্প তুলে ধরা হলেও রাজনৈতিক দলগুলোর মন্তব্য, আশার ঝুলি পূর্ণ করতে পারেনি
+              অন্তর্বর্তী সরকার।
+            </p>
+            <a href="https://www.youtube.com/watch?v=XGyBj_KOiHs" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/8UroU5_dQWs" title="জনগণের রায় নিয়েই কল্যাণ রাষ্ট্র গড়ে তোলা হবে"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Aug 8, 2025</span>
+              <span class="tag">POLITICS</span>
+            </div>
+            <h3 class="yt-title">জনগণের রায় নিয়েই কল্যাণ রাষ্ট্র গড়ে তোলা হবে</h3>
+            <p class="yt-desc">জনগণের রায় নিয়েই কল্যাণ রাষ্ট্র গড়ে তোলা হবে</p>
+            <a href="https://www.youtube.com/watch?v=8UroU5_dQWs" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/HnAJAFu-d08"
+              title="বিএনপির র্যালিতে মির্জা ফখরুল, সালাহউদ্দিন ও অ্যানি" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Aug 6, 2025</span>
+              <span class="tag">POLITICS</span>
+            </div>
+            <h3 class="yt-title">বিএনপির র্যালিতে মির্জা ফখরুল, সালাহউদ্দিন ও অ্যানি</h3>
+            <p class="yt-desc">বিএনপির র‌্যালিতে মির্জা ফখরুল, সালাহউদ্দিন ও অ্যানি</p>
+            <a href="https://www.youtube.com/watch?v=HnAJAFu-d08" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/piXun4G4Oks" title="সনদ অসম্পূরণ দাবি করে গণভোট চায় জামায়াত"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Jul 30, 2025</span>
+              <span class="tag">July Proclamation</span>
+            </div>
+            <h3 class="yt-title">সনদ অসম্পূরণ দাবি করে গণভোট চায় জামায়াত</h3>
+            <p class="yt-desc">সনদ অসম্পূরণ দাবি করে গণভোট চায় জামায়াত</p>
+            <a href="https://www.youtube.com/watch?v=piXun4G4Oks" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/Bl6l4s-eU5o" title="প্রিয় মাতৃভূমিতে ফিরলেন খালেদা জিয়া"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> May 6, 2025</span>
+              <span class="tag">Khaleda Zia</span>
+            </div>
+            <h3 class="yt-title">প্রিয় মাতৃভূমিতে ফিরলেন খালেদা জিয়া</h3>
+            <p class="yt-desc">প্রিয় মাতৃভূমিতে ফিরলেন খালেদা জিয়া</p>
+            <a href="https://www.youtube.com/watch?v=Bl6l4s-eU5o" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/8ggzFM6OJ1Y" title="জনসংযোগে ইফতার মাহফিল কতটা কার্যকর?"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Mar 2, 2025</span>
+              <span class="tag">Political Iftar Party</span>
+            </div>
+            <h3 class="yt-title">জনসংযোগে ইফতার মাহফিল কতটা কার্যকর?</h3>
+            <p class="yt-desc">জনসংযোগে ইফতার মাহফিল কতটা কার্যকর?</p>
+            <a href="https://www.youtube.com/watch?v=8ggzFM6OJ1Y" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/O4fnNcmAEwY" title="জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Aug 6, 2024</span>
+              <span class="tag">POLITICS</span>
+            </div>
+            <h3 class="yt-title">জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা</h3>
+            <p class="yt-desc">জামিনে মুক্ত শিক্ষার্থী, রাজনৈতিক নেতারা</p>
+            <a href="https://www.youtube.com/watch?v=O4fnNcmAEwY" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
   <!-- ========================= -->
   <!-- Expatriate Welfare - প্রবাসী কল্যাণ -->
   <!-- ========================= -->
@@ -274,106 +375,167 @@
       <h2 class="section-heading">Expatriate Welfare - প্রবাসী কল্যাণ</h2>
 
       <div class="yt-grid" id="expatriate-grid">
-        <!-- Cards rendered by JavaScript below -->
-      </div>
-    </div>
-  </section>
-
-  <script>
-    const expatriateVideos = [
-      {
-        embed: "https://www.youtube.com/embed/t4HpN8DSPJ8",
-        watch: "https://www.youtube.com/watch?v=t4HpN8DSPJ8",
-        date: "Oct 17, 2025",
-        tag: "Expatriate",
-        title: "ফিরে এলাম শূন্য হাতে”— হাজারো নারীর ব্যর্থ অভিবাসন গল্প ",
-        desc: "A year-in-review assessment of the interim government's performance, drawing on expert opinion and public sentiment."
-      },
-      {
-        embed: "https://www.youtube.com/embed/DSPDJfCEg8E",
-        watch: "https://www.youtube.com/watch?v=DSPDJfCEg8E",
-        date: "Jul 7, 2025",
-        tag: "Expatriate",
-        title: "জিম্মিদশা পেরিয়ে লিবিয়া ফেরত তরুণের ভয়াবহ গল্প",
-        desc: "Live studio coverage as bail is granted to student protesters and political party leaders following the July uprising."
-      },
-      {
-        embed: "https://www.youtube.com/embed/gCTeFfCoBNI",
-        watch: "https://www.youtube.com/watch?v=gCTeFfCoBNI",
-        date: "Mar 31, 2025",
-        tag: "Expatriate",
-        title: "ভিনদেশি মুদ্রার যোগানে বদলে যাওয়া ব্রাহ্মণবাড়িয়া",
-        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-      },
-      {
-        embed: "https://www.youtube.com/embed/CZe9Fqn6Idg",
-        watch: "https://www.youtube.com/watch?v=CZe9Fqn6Idg",
-        date: " May 10, 2024",
-        tag: "Expatriate",
-        title: "রিক্রুটিং এজেন্সির দৌরাত্ম্যে বাড়তি খরচ",
-        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-      },
-
-
-      {
-        embed: "https://www.youtube.com/embed/Ey7hFvq5KtU",
-        watch: "https://www.youtube.com/watch?v=Ey7hFvq5KtU",
-        date: " Apr 3, 2024",
-        tag: "Expatriate",
-        title: "গ্রামের টিনের ঘর অট্টালিকায় রূপ নেয় প্রবাসী আয়ে ",
-        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-      },
-      {
-        embed: "https://www.youtube.com/embed/kxmKzh2t1js",
-        watch: "https://www.youtube.com/watch?v=kxmKzh2t1js",
-        date: " May 23, 2024",
-        tag: "Expatriate",
-        title: "প্রশিক্ষণ নিতে কেন আগ্রহ নেই বিদেশগামী কর্মীদের?  ",
-        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-      },
-      {
-        embed: "https://www.youtube.com/embed/vhpev67iKfc",
-        watch: "https://www.youtube.com/watch?v=vhpev67iKfc",
-        date: " Sep 5, 2023 ",
-        tag: "Expatriate",
-        title: "নির্যাতনের দাগ নিয়ে দেশে ফিরলেন তারা ",
-        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-      },
-    ];
-
-    const expatriateGrid = document.getElementById("expatriate-grid");
-
-    expatriateGrid.innerHTML = expatriateVideos.map(video => `
         <article class="yt-card">
           <div class="yt-video">
-            <iframe
-              src="${video.embed}"
-              title="${video.title}"
-              frameborder="0"
+            <iframe src="https://www.youtube.com/embed/t4HpN8DSPJ8"
+              title="ফিরে এলাম শূন্য হাতে”— হাজারো নারীর ব্যর্থ অভিবাসন গল্প" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
           </div>
           <div class="yt-body">
             <div class="yt-meta">
-              <span class="yt-date"><i class="fa-regular fa-calendar"></i> ${video.date}</span>
-              <span class="tag ">${video.tag}</span>
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Oct 17, 2025</span>
+              <span class="tag">Women Immigrant</span>
             </div>
-            <h3 class="yt-title">${video.title}</h3>
-            <p class="yt-desc">${video.desc}</p>
-            <a
-              href="${video.watch}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="yt-watch-btn"
-            >
+            <h3 class="yt-title">ফিরে এলাম শূন্য হাতে”— হাজারো নারীর ব্যর্থ অভিবাসন গল্প</h3>
+            <p class="yt-desc">ফিরে এলাম শূন্য হাতে — হাজারো নারীর ব্যর্থ অভিবাসন গল্প</p>
+            <a href="https://www.youtube.com/watch?v=t4HpN8DSPJ8" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
               <i class="fa-brands fa-youtube"></i> Watch on YouTube
             </a>
           </div>
         </article>
-      `).join("");
-  </script>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/DSPDJfCEg8E"
+              title="জিম্মিদশা পেরিয়ে লিবিয়া ফেরত তরুণের ভয়াবহ গল্প" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Jul 7, 2025</span>
+              <span class="tag">Human Trafficking</span>
+            </div>
+            <h3 class="yt-title">জিম্মিদশা পেরিয়ে লিবিয়া ফেরত তরুণের ভয়াবহ গল্প</h3>
+            <p class="yt-desc">জিম্মিদশা পেরিয়ে লিবিয়া ফেরত তরুণের ভয়াবহ গল্প</p>
+            <a href="https://www.youtube.com/watch?v=DSPDJfCEg8E" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/gCTeFfCoBNI"
+              title="ভিনদেশি মুদ্রার যোগানে বদলে যাওয়া ব্রাহ্মণবাড়িয়া" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Mar 31, 2025</span>
+              <span class="tag">Remittance</span>
+            </div>
+            <h3 class="yt-title">ভিনদেশি মুদ্রার যোগানে বদলে যাওয়া ব্রাহ্মণবাড়িয়া</h3>
+            <p class="yt-desc">ভিনদেশি মুদ্রার যোগানে বদলে যাওয়া ব্রাহ্মণবাড়িয়া</p>
+            <a href="https://www.youtube.com/watch?v=gCTeFfCoBNI" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/CZe9Fqn6Idg" title="রিক্রুটিং এজেন্সির দৌরাত্ম্যে বাড়তি খরচ"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> May 10, 2024</span>
+              <span class="tag">Migration</span>
+            </div>
+            <h3 class="yt-title">রিক্রুটিং এজেন্সির দৌরাত্ম্যে বাড়তি খরচ</h3>
+            <p class="yt-desc">অভিবাসনে একজন বাংলাদেশির গড় ব্যয় ৪ লাখ টাকার বেশি। আর মাসিক গড় আয় ২৩ হাজার টাকা। এতে
+              অভিবাসন ব্যয় তুলে আনতে সময় লাগছে কমপক্ষে দেড় বছর।</p>
+            <a href="https://www.youtube.com/watch?v=CZe9Fqn6Idg" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/Ey7hFvq5KtU"
+              title="গ্রামের টিনের ঘর অট্টালিকায় রূপ নেয় প্রবাসী আয়ে" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Apr 3, 2024</span>
+              <span class="tag">Remittance Worker</span>
+            </div>
+            <h3 class="yt-title">গ্রামের টিনের ঘর অট্টালিকায় রূপ নেয় প্রবাসী আয়ে</h3>
+            <p class="yt-desc">রেমিট্যান্সের কল্যাণে এখন ঘরে ঘরে দিন বদলের হাওয়া, উৎসব হয়েছে আনন্দমুখর; পাল্টেছে
+              আর্থ-সামাজিক পরিস্থিতি। তবে এই অর্থ উৎপাদনশীল কাজে লাগানোর পরামর্শ বিশেষজ্ঞদের।</p>
+            <a href="https://www.youtube.com/watch?v=Ey7hFvq5KtU" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/kxmKzh2t1js"
+              title="প্রশিক্ষণ নিতে কেন আগ্রহ নেই বিদেশগামী কর্মীদের?" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> May 23, 2024</span>
+              <span class="tag">Labour Training</span>
+            </div>
+            <h3 class="yt-title">প্রশিক্ষণ নিতে কেন আগ্রহ নেই বিদেশগামী কর্মীদের?</h3>
+            <p class="yt-desc">প্রশিক্ষণ ছাড়া বিদেশ গিয়ে কর্মহীন থাকা কিংবা কাঙ্ক্ষিত কাজের সন্ধান না পাওয়া-এমন খবর এখন
+              আর নতুন নয়। পর্যাপ্ত দক্ষতার অভাবে প্রবাসে বাংলাদেশি কর্মীদের একটা বড় অংশ পড়েন নানা সংকটে।</p>
+            <a href="https://www.youtube.com/watch?v=kxmKzh2t1js" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/vhpev67iKfc" title="নির্যাতনের দাগ নিয়ে দেশে ফিরলেন তারা"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Sep 5, 2023</span>
+              <span class="tag">Migrants of Libya</span>
+            </div>
+            <h3 class="yt-title">নির্যাতনের দাগ নিয়ে দেশে ফিরলেন তারা</h3>
+            <p class="yt-desc">দেশে ফিরেছেন লিবিয়ায় আটকে থাকা ১৫১ জন বাংলাদেশি। আইওএমের সহায়তায় বেনগাজির গানফুদা
+              আশ্রয়কেন্দ্র থেকে তাদের উদ্ধার করে বাংলাদেশ দূতাবাস।</p>
+            <a href="https://www.youtube.com/watch?v=vhpev67iKfc" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
 
   <!--Climate & Environment - জলবায়ু ও পরিবেশ  -->
   <!-- ========================= -->
@@ -385,147 +547,247 @@
       </h2>
 
       <div class="yt-grid" id="climate-grid">
-        <!-- Cards rendered by JavaScript below -->
-      </div>
-    </div>
-  </section>
-
-  <script>
-    const climateVideos = [
-  {
-    embed: "https://www.youtube.com/embed/WKo0peMEAPA",
-    watch: "https://www.youtube.com/watch?v=WKo0peMEAPA",
-    date: "Sep 15, 2025",
-    tag: "ENVIRONMENT",
-    tagClass: "tag-green",
-    title: "প্রথমবারের মতো 'ডিগ্রেডেড এয়ারশেড' হলো সাভার",
-    desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-  },
-  {
-    embed: "https://www.youtube.com/embed/w0y8MHKM6Xc",
-    watch: "https://www.youtube.com/watch?v=w0y8MHKM6Xc",
-    date: "May 20, 2024",
-    tag: "ENVIRONMENT",
-    tagClass: "tag-green",
-    title: "যেসব কারণে আশঙ্কাজনক হারে বাড়ছে বজ্রপাতে মৃত্যু",
-    desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-  },
-  {
-    embed: "https://www.youtube.com/embed/QAkm-LM4Jb0",
-    watch: "http://youtube.com/watch?v=QAkm-LM4Jb0",
-    date: "Nov 29, 2023",
-    tag: "ENVIRONMENT",
-    tagClass: "tag-green",
-    title: "জলবায়ু সচেতন স্বাস্থ্যনীতি কার্যকরের দাবি",
-    desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-  },
-  {
-    embed: "https://www.youtube.com/embed/au41ykhQNmM",
-    watch: "https://www.youtube.com/watch?v=au41ykhQNmM",
-    date: "Sep 22, 2024",
-    tag: "ENVIRONMENT",
-    tagClass: "tag-green",
-    title: "'ব্যক্তিস্বার্থে জলবায়ু তহবিলের অর্থ ব্যবহার বন্ধ করা হবে'",
-    desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-  },
-  {
-    embed: "https://www.youtube.com/embed/lWhlXn-pRhE",
-    watch: "https://www.youtube.com/watch?v=lWhlXn-pRhE",
-    date: "Dec 5, 2024",
-    tag: "ENVIRONMENT",
-    tagClass: "tag-green",
-    title: "বিশ্বের ১২৬ শহরের মধ্যে বায়ুদূষণে শীর্ষে ঢাকা",
-    desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-  },
-  {
-    embed: "https://www.youtube.com/embed/tlLWaeLHo-s",
-    watch: "https://www.youtube.com/watch?v=tlLWaeLHo-s",
-    date: "Jun 9, 2023",
-    tag: "ENVIRONMENT",
-    tagClass: "tag-green",
-    title: "উন্নয়নের নামে বয়সী গাছ কাটা 'অনাকাঙ্ক্ষিত'",
-    desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-  },
-  {
-    embed: "https://www.youtube.com/embed/sm26Txodf7Q",
-    watch: "https://www.youtube.com/watch?v=sm26Txodf7Q",
-    date: "May 29, 2024",
-    tag: "ENVIRONMENT",
-    tagClass: "tag-green",
-    title: "নেই পর্যাপ্ত বাজেট ও ব্যবস্থা, উচ্চ ঝুঁকিতে বাংলাদেশ!",
-   desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-  },
-  {
-    embed: "https://www.youtube.com/embed/Gso4-TrPD_o",
-    watch: "https://www.youtube.com/watch?v=Gso4-TrPD_o",
-    date: "Jun 26, 2024",
-    tag: "ENVIRONMENT",
-    tagClass: "tag-green",
-    title: "ভূগর্ভস্থ পানির স্তর নামছে নিচে, সুপেয় পানি হচ্ছে দুর্লভ!",
-    desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-  },
-  {
-    embed: "https://www.youtube.com/embed/KYQipjBlTvo",
-    watch: "https://www.youtube.com/watch?v=KYQipjBlTvo",
-    date: "May 30, 2023",
-    tag: "ENVIRONMENT",
-    tagClass: "tag-green",
-    title: "গভীর নলকূপেও পাওয়া যাচ্ছে না খাবার পানি!",
-    desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-  },
-  {
-    embed: "https://www.youtube.com/embed/afDOG0MJsY0",
-    watch: "https://www.youtube.com/watch?v=afDOG0MJsY0",
-    date: "Jun 5, 2023",
-    tag: "ENVIRONMENT",
-    tagClass: "tag-green",
-    title: "প্রতিদিন রাজধানীতে জমছে ৭শ' টন প্লাস্টিক বর্জ্য!",
-  desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-  },
-  {
-    embed: "https://www.youtube.com/embed/v5rc0jugn7k",
-    watch: "https://www.youtube.com/watch?v=v5rc0jugn7k",
-    date: "Nov 7, 2022",
-    tag: "ENVIRONMENT",
-    tagClass: "tag-green",
-    title: "বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা.",
-    desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-  }
-]
-
-    const climateGrid = document.getElementById("climate-grid");
-
-    climateGrid.innerHTML = climateVideos.map(video => `
         <article class="yt-card">
           <div class="yt-video">
-            <iframe
-              src="${video.embed}"
-              title="${video.title}"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+            <iframe src="https://www.youtube.com/embed/WKo0peMEAPA" title="প্রথমবারের মতো 'ডিগ্রেডেড এয়ারশেড' হলো সাভার"
+              frameborder="0" allowfullscreen></iframe>
           </div>
           <div class="yt-body">
             <div class="yt-meta">
-              <span class="yt-date"><i class="fa-regular fa-calendar"></i> ${video.date}</span>
-              <span class="tag ${video.tagClass}">${video.tag}</span>
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Sep 15, 2025</span>
+              <span class="tag">Air Pollution</span>
             </div>
-            <h3 class="yt-title">${video.title}</h3>
-            <p class="yt-desc">${video.desc}</p>
-            <a
-              href="${video.watch}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="yt-watch-btn"
-            >
+            <h3 class="yt-title">প্রথমবারের মতো 'ডিগ্রেডেড এয়ারশেড' হলো সাভার</h3>
+            <p class="yt-desc">প্রথমবারের মতো 'ডিগ্রেডেড এয়ারশেড' হলো সাভার</p>
+            <a href="https://www.youtube.com/watch?v=WKo0peMEAPA" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
               <i class="fa-brands fa-youtube"></i> Watch on YouTube
             </a>
           </div>
         </article>
-      `).join("");
-  </script>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/w0y8MHKM6Xc"
+              title="যেসব কারণে আশঙ্কাজনক হারে বাড়ছে বজ্রপাতে মৃত্যু" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> May 20, 2024</span>
+              <span class="tag">Thunderstorm</span>
+            </div>
+            <h3 class="yt-title">যেসব কারণে আশঙ্কাজনক হারে বাড়ছে বজ্রপাতে মৃত্যু</h3>
+            <p class="yt-desc">আশঙ্কাজনক হারে বাড়ছে বজ্রপাতে মৃত্যুর সংখ্যা। আবহাওয়া অধিদপ্তর বলছে, বজ্রপাতের আগে
+              পূর্বাভাস দেয়া কঠিন, তবে সতকর্তার মধ্যদিয়ে মৃত্যু এড়ানো সম্ভব।</p>
+            <a href="https://www.youtube.com/watch?v=w0y8MHKM6Xc" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/QAkm-LM4Jb0" title="জলবায়ু সচেতন স্বাস্থ্যনীতি কার্যকরের দাবি"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Nov 29, 2023</span>
+              <span class="tag">Global Warming</span>
+            </div>
+            <h3 class="yt-title">জলবায়ু সচেতন স্বাস্থ্যনীতি কার্যকরের দাবি</h3>
+            <p class="yt-desc">কার্বন নিঃসরণের তালিকার তলানিতে থেকেও বৈশ্বিক উষ্ণতার বলি হচ্ছে বাংলাদেশের মানুষ। বিশেষ
+              করে শিশুরা ক্ষতিগ্রস্ত হচ্ছে সবচেয়ে বেশি।</p>
+            <a href="http://youtube.com/watch?v=QAkm-LM4Jb0" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/au41ykhQNmM"
+              title="'ব্যক্তিস্বার্থে জলবায়ু তহবিলের অর্থ ব্যবহার বন্ধ করা হবে'" frameborder="0"
+              allowfullscreen></iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Sep 22, 2024</span>
+              <span class="tag">Corruption</span>
+            </div>
+            <h3 class="yt-title">'ব্যক্তিস্বার্থে জলবায়ু তহবিলের অর্থ ব্যবহার বন্ধ করা হবে'</h3>
+            <p class="yt-desc">'ব্যক্তিস্বার্থে জলবায়ু তহবিলের অর্থ ব্যবহার বন্ধ করা হবে'</p>
+            <a href="https://www.youtube.com/watch?v=au41ykhQNmM" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/lWhlXn-pRhE"
+              title="বিশ্বের ১২৬ শহরের মধ্যে বায়ুদূষণে শীর্ষে ঢাকা" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Dec 5, 2024</span>
+              <span class="tag">Air Pollution</span>
+            </div>
+            <h3 class="yt-title">বিশ্বের ১২৬ শহরের মধ্যে বায়ুদূষণে শীর্ষে ঢাকা</h3>
+            <p class="yt-desc">বিশ্বের ১২৬ শহরের মধ্যে বায়ুদূষণে শীর্ষে ঢাকা</p>
+            <a href="https://www.youtube.com/watch?v=lWhlXn-pRhE" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/tlLWaeLHo-s" title="উন্নয়নের নামে বয়সী গাছ কাটা 'অনাকাঙ্ক্ষিত'"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Jun 9, 2023</span>
+              <span class="tag">DSCC Tree Cut</span>
+            </div>
+            <h3 class="yt-title">উন্নয়নের নামে বয়সী গাছ কাটা 'অনাকাঙ্ক্ষিত'</h3>
+            <p class="yt-desc">প্রাণসঞ্চারি, অক্সিজেনের ভান্ডার গাছ। ইট-পাথরের শহরে প্রশান্তির উৎস। কিন্তু সেই সবুজেই
+              হঠাৎ থাবা।</p>
+            <a href="https://www.youtube.com/watch?v=tlLWaeLHo-s" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/sm26Txodf7Q"
+              title="নেই পর্যাপ্ত বাজেট ও ব্যবস্থা, উচ্চ ঝুঁকিতে বাংলাদেশ!" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> May 29, 2024</span>
+              <span class="tag">Climate Change</span>
+            </div>
+            <h3 class="yt-title">নেই পর্যাপ্ত বাজেট ও ব্যবস্থা, উচ্চ ঝুঁকিতে বাংলাদেশ!</h3>
+            <p class="yt-desc">বৈরি আবহাওয়া ও দুর্যোগ বাড়লেও তা মোকাবিলা ও ক্ষতিগ্রস্তদের পুনর্বাসনে জাতীয় বাজেটে বরাদ্দ
+              অপ্রতুল।</p>
+            <a href="https://www.youtube.com/watch?v=sm26Txodf7Q" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/Gso4-TrPD_o"
+              title="ভূগর্ভস্থ পানির স্তর নামছে নিচে, সুপেয় পানি হচ্ছে দুর্লভ!" frameborder="0"
+              allowfullscreen></iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Jun 26, 2024</span>
+              <span class="tag">Water Crisis</span>
+            </div>
+            <h3 class="yt-title">ভূগর্ভস্থ পানির স্তর নামছে নিচে, সুপেয় পানি হচ্ছে দুর্লভ!</h3>
+            <p class="yt-desc">ঢাকাসহ সারাদেশে চলছে পানির নীরব সংকট। একদিকে সুপেয় পানির অভাব, অন্যদিকে সেচের জলভাণ্ডারেও
+              পড়েছে টান।</p>
+            <a href="https://www.youtube.com/watch?v=Gso4-TrPD_o" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/KYQipjBlTvo" title="গভীর নলকূপেও পাওয়া যাচ্ছে না খাবার পানি!"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> May 30, 2023</span>
+              <span class="tag">Water Crisis</span>
+            </div>
+            <h3 class="yt-title">গভীর নলকূপেও পাওয়া যাচ্ছে না খাবার পানি!</h3>
+            <p class="yt-desc">ধীরে ধীরে নামছে ভূগর্ভস্থ পানির স্তর। অনেক এলাকায় ওয়াসা সংযোগ দিলেও মিলছে না পানি।</p>
+            <a href="https://www.youtube.com/watch?v=KYQipjBlTvo" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/afDOG0MJsY0"
+              title="প্রতিদিন রাজধানীতে জমছে ৭শ' টন প্লাস্টিক বর্জ্য!" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> May 30, 2023</span>
+              <span class="tag">Environment Budget</span>
+            </div>
+            <h3 class="yt-title">প্রতিদিন রাজধানীতে জমছে ৭শ' টন প্লাস্টিক বর্জ্য!</h3>
+            <p class="yt-desc">গত কয়েক অর্থবছরে বাজেটের আকার বাড়লেও বরাদ্দ বাড়ছে না পরিবেশ, বন ও জলবায়ু খাতে।</p>
+            <a href="https://www.youtube.com/watch?v=afDOG0MJsY0" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/fUpxFX3sjVE"
+              title="প্রতিদিন রাজধানীতে জমছে ৭শ' টন প্লাস্টিক বর্জ্য!" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Jun 5, 2023</span>
+              <span class="tag">Plastic Pollution</span>
+            </div>
+            <h3 class="yt-title">প্রতিদিন রাজধানীতে জমছে ৭শ' টন প্লাস্টিক বর্জ্য!</h3>
+            <p class="yt-desc">প্রতিদিন প্রায় ৭শ' টন প্লাস্টিক বর্জ্যের ঘানি টানছে রাজধানী। বিষাক্ত হচ্ছে পানি, ভারসাম্য
+              হারাচ্ছে পরিবেশ।</p>
+            <a href="https://www.youtube.com/watch?v=fUpxFX3sjVE" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="yt-card">
+          <div class="yt-video">
+            <iframe src="https://www.youtube.com/embed/v5rc0jugn7k" title="বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা."
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="yt-body">
+            <div class="yt-meta">
+              <span class="yt-date"><i class="fa-regular fa-calendar"></i> Nov 7, 2022</span>
+              <span class="tag">Cyclone</span>
+            </div>
+            <h3 class="yt-title">বছরে ঘূর্ণিঝড়েই ক্ষতি ১০ হাজার কোটি টাকা.</h3>
+            <p class="yt-desc">জলবায়ু পরিবর্তনের কারণে দুর্যোগপ্রবণ বাংলাদেশে প্রতি বছর শুধু ঘূর্ণিঝড়েই ক্ষতি হচ্ছে
+              অন্তত ১০ হাজার কোটি টাকা।</p>
+            <a href="https://www.youtube.com/watch?v=v5rc0jugn7k" target="_blank" rel="noopener noreferrer"
+              class="yt-watch-btn">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
   <!--কৃষি/ অর্থনীতি -->
   <!-- ========================= -->
   <section class="port-section">
@@ -534,83 +796,117 @@
       <h2 class="section-heading">কৃষি/ অর্থনীতি</h2>
 
       <div class="yt-grid" id="krishi-grid">
-        <!-- Cards rendered by JavaScript below -->
+       <article class="yt-card">
+  <div class="yt-video">
+    <iframe
+      src="https://www.youtube.com/embed/yfIuvhyaIk0"
+      title="যুক্তরাষ্ট্রের নতুন শুল্কে চাপের মুখে বাংলাদেশের রপ্তানি খাত"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="yt-body">
+    <div class="yt-meta">
+      <span class="yt-date"><i class="fa-regular fa-calendar"></i> Jul 11, 2025</span>
+      <span class="tag">Trump Tariff</span>
+    </div>
+    <h3 class="yt-title">যুক্তরাষ্ট্রের নতুন শুল্কে চাপের মুখে বাংলাদেশের রপ্তানি খাত</h3>
+    <p class="yt-desc">
+      মার্কিন শুল্কনীতি বাংলাদেশের রপ্তানি খাতে চাপ বাড়াবে বলে মনে করেন ব্যবসায়ী নেতারা।
+      পরিস্থিতি মোকাবিলায় যুক্তরাষ্ট্রের সাথে রাজনৈতিকভাবে সমঝোতার ওপর জোর দিচ্ছেন তারা।
+      এদিকে, দেশের অর্থনীতিতে নেতিবাচক প্রভাব পড়ার আশঙ্কা করছেন অর্থনীতি বিশ্লেষকরা।
+    </p>
+    <a href="http://youtube.com/watch?v=yfIuvhyaIk0" target="_blank" rel="noopener noreferrer" class="yt-watch-btn">
+      <i class="fa-brands fa-youtube"></i> Watch on YouTube
+    </a>
+  </div>
+</article>
+
+<article class="yt-card">
+  <div class="yt-video">
+    <iframe
+      src="https://www.youtube.com/embed/9M90FBsKH14"
+      title="বদলে যাচ্ছে রংপুর-বগুড়ার কৃষকদের ভাগ্য"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="yt-body">
+    <div class="yt-meta">
+      <span class="yt-date"><i class="fa-regular fa-calendar"></i> Jan 12, 2025</span>
+      <span class="tag">Agriculture</span>
+    </div>
+    <h3 class="yt-title">বদলে যাচ্ছে রংপুর-বগুড়ার কৃষকদের ভাগ্য</h3>
+    <p class="yt-desc">বদলে যাচ্ছে রংপুর-বগুড়ার কৃষকদের ভাগ্য</p>
+    <a href="https://www.youtube.com/watch?v=9M90FBsKH14" target="_blank" rel="noopener noreferrer" class="yt-watch-btn">
+      <i class="fa-brands fa-youtube"></i> Watch on YouTube
+    </a>
+  </div>
+</article>
+
+<article class="yt-card">
+  <div class="yt-video">
+    <iframe
+      src="https://www.youtube.com/embed/EVSg7_lAkB0"
+      title="সেচের পানির অভাব ঘুচিয়ে দিচ্ছে সোলার পাম্প"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="yt-body">
+    <div class="yt-meta">
+      <span class="yt-date"><i class="fa-regular fa-calendar"></i> Dec 27, 2024</span>
+      <span class="tag">Solar Waterpump</span>
+    </div>
+    <h3 class="yt-title">সেচের পানির অভাব ঘুচিয়ে দিচ্ছে সোলার পাম্প </h3>
+    <p class="yt-desc">
+      উত্তর জনপদে সেচের পানির অভাব ঘুচিয়ে দিচ্ছে সোলার পাম্প। প্রান্তিক কৃষকদের ভাগ্য
+      ফেরাতে বিভিন্ন উন্নয়ন সহযোগীদের সহায়তায় বাস্তবায়ন করা হচ্ছে এই প্রকল্প।
+      এতে হাসি ফুটছে কৃষকের মুখে।
+    </p>
+    <a href="https://www.youtube.com/watch?v=EVSg7_lAkB0" target="_blank" rel="noopener noreferrer" class="yt-watch-btn">
+      <i class="fa-brands fa-youtube"></i> Watch on YouTube
+    </a>
+  </div>
+</article>
+
+<article class="yt-card">
+  <div class="yt-video">
+    <iframe
+      src="https://www.youtube.com/embed/AnKBqfKPGW4"
+      title="পণ্য পরিবহন ও ন্যায্যমূল্য নিশ্চিতের তাগিদ"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="yt-body">
+    <div class="yt-meta">
+      <span class="yt-date"><i class="fa-regular fa-calendar"></i> Feb 6, 2024</span>
+      <span class="tag">Char Economy</span>
+    </div>
+    <h3 class="yt-title">পণ্য পরিবহন ও ন্যায্যমূল্য নিশ্চিতের তাগিদ</h3>
+    <p class="yt-desc">
+      বদলে যাচ্ছে চরাঞ্চলের কৃষি। সৌর বিদ্যুতের সেচ প্রকল্পের সুবিধা নিয়ে হাসি ফুটছে কৃষকের।
+      দিন বদলের স্বপ্ন দেখছেন ৩৬টি চরের কয়েক হাজার বাসিন্দা।
+    </p>
+    <a href="https://www.youtube.com/watch?v=AnKBqfKPGW4" target="_blank" rel="noopener noreferrer" class="yt-watch-btn">
+      <i class="fa-brands fa-youtube"></i> Watch on YouTube
+    </a>
+  </div>
+</article>
       </div>
     </div>
   </section>
 
-  <script>
-    const krishiVideos = [
-      {
-        embed: "http://youtube.com/embed/yfIuvhyaIk0",
-        watch: "http://youtube.com/watch?v=yfIuvhyaIk0",
-        date: "Jul 11, 2025",
-        tag: "Economics",
-        title: "যুক্তরাষ্ট্রের নতুন শুল্কে চাপের মুখে বাংলাদেশের রপ্তানি খাত",
-        desc: "A year-in-review assessment of the interim government's performance, drawing on expert opinion and public sentiment."
-      },
-      {
-        embed: "https://www.youtube.com/embed/9M90FBsKH14",
-        watch: "https://www.youtube.com/watch?v=9M90FBsKH14",
-        date: "Jan 12, 2025",
-        tag: "Agriculture",
-      
-        title: "বদলে যাচ্ছে রংপুর-বগুড়ার কৃষকদের ভাগ্য",
-        desc: "Live studio coverage as bail is granted to student protesters and political party leaders following the July uprising."
-      },
-      {
-        embed: "https://www.youtube.com/embed/EVSg7_lAkB0",
-        watch: "https://www.youtube.com/watch?v=EVSg7_lAkB0",
-        date: "Dec 27, 2024",
-        tag: "Agriculture",
-       
-        title: "সেচের পানির অভাব ঘুচিয়ে দিচ্ছে সোলার পাম্প",
-        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-      },
-      {
-        embed: "https://www.youtube.com/embed/AnKBqfKPGW4",
-        watch: "https://www.youtube.com/watch?v=AnKBqfKPGW4",
-        date: " Feb 6, 2024",
-        tag: "Economics",
-       
-        title: "পণ্য পরিবহন ও ন্যায্যমূল্য নিশ্চিতের তাগিদ",
-        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-      }
-    ];
-
-    const krishiGrid = document.getElementById("krishi-grid");
-
-    krishiGrid.innerHTML = krishiVideos.map(video => `
-        <article class="yt-card">
-          <div class="yt-video">
-            <iframe
-              src="${video.embed}"
-              title="${video.title}"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="yt-body">
-            <div class="yt-meta">
-              <span class="yt-date"><i class="fa-regular fa-calendar"></i> ${video.date}</span>
-              <span class="tag ">${video.tag}</span>
-            </div>
-            <h3 class="yt-title">${video.title}</h3>
-            <p class="yt-desc">${video.desc}</p>
-            <a
-              href="${video.watch}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="yt-watch-btn"
-            >
-              <i class="fa-brands fa-youtube"></i> Watch on YouTube
-            </a>
-          </div>
-        </article>
-      `).join("");
-  </script>
+  
   <!--নাগরিক সমস্যা -->
   <!-- ========================= -->
   <section class="port-section">
@@ -619,103 +915,163 @@
       <h2 class="section-heading">নাগরিক সমস্যা</h2>
 
       <div class="yt-grid" id="nagorik-grid">
+        <article class="yt-card">
+  <div class="yt-video">
+    <iframe
+      src="https://www.youtube.com/embed/qPZ3WULx4kY"
+      title="বেপরোয়া গতি, অসুস্থ প্রতিযোগিতায় অতিষ্ঠ মানুষ"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="yt-body">
+    <div class="yt-meta">
+      <span class="yt-date"><i class="fa-regular fa-calendar"></i> Feb 22, 2025</span>
+      <span class="tag">Local Bus</span>
+    </div>
+    <h3 class="yt-title">বেপরোয়া গতি, অসুস্থ প্রতিযোগিতায় অতিষ্ঠ মানুষ</h3>
+    <p class="yt-desc">বেপরোয়া গতি, অসুস্থ প্রতিযোগিতায় অতিষ্ঠ মানুষ</p>
+    <a href="https://www.youtube.com/watch?v=qPZ3WULx4kY" target="_blank" rel="noopener noreferrer" class="yt-watch-btn">
+      <i class="fa-brands fa-youtube"></i> Watch on YouTube
+    </a>
+  </div>
+</article>
+
+<article class="yt-card">
+  <div class="yt-video">
+    <iframe
+      src="https://www.youtube.com/embed/V9gJGiHUSrQ"
+      title="ঘটনার পরে জানা যায় অনিয়মের কারণ"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="yt-body">
+    <div class="yt-meta">
+      <span class="yt-date"><i class="fa-regular fa-calendar"></i> Mar 2, 2024</span>
+      <span class="tag">Fire Restaurent</span>
+    </div>
+    <h3 class="yt-title">ঘটনার পরে জানা যায় অনিয়মের কারণ</h3>
+    <p class="yt-desc">ঘটনার পরে জানা যায় অনিয়মের কারণ</p>
+    <a href="https://www.youtube.com/watch?v=V9gJGiHUSrQ" target="_blank" rel="noopener noreferrer" class="yt-watch-btn">
+      <i class="fa-brands fa-youtube"></i> Watch on YouTube
+    </a>
+  </div>
+</article>
+
+<article class="yt-card">
+  <div class="yt-video">
+    <iframe
+      src="https://www.youtube.com/embed/IiKPNMCWacU"
+      title="নোটিশেই সীমাবদ্ধ নিরাপত্তা ইস্যু!"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="yt-body">
+    <div class="yt-meta">
+      <span class="yt-date"><i class="fa-regular fa-calendar"></i> Mar 2, 2024</span>
+      <span class="tag">Fire</span>
+    </div>
+    <h3 class="yt-title">নোটিশেই সীমাবদ্ধ নিরাপত্তা ইস্যু!</h3>
+    <p class="yt-desc">নোটিশেই সীমাবদ্ধ নিরাপত্তা ইস্যু!</p>
+    <a href="http://youtube.com/watch?v=IiKPNMCWacU" target="_blank" rel="noopener noreferrer" class="yt-watch-btn">
+      <i class="fa-brands fa-youtube"></i> Watch on YouTube
+    </a>
+  </div>
+</article>
+
+<article class="yt-card">
+  <div class="yt-video">
+    <iframe
+      src="https://www.youtube.com/embed/FuzhPIjggjY"
+      title="সমাধান নেই জলাবদ্ধতার, ভোগান্তিতে নগরবাসী"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="yt-body">
+    <div class="yt-meta">
+      <span class="yt-date"><i class="fa-regular fa-calendar"></i> Aug 5, 2023</span>
+      <span class="tag">City Lake</span>
+    </div>
+    <h3 class="yt-title">সমাধান নেই জলাবদ্ধতার, ভোগান্তিতে নগরবাসী</h3>
+    <p class="yt-desc">
+      অবৈধ দখল ও ভরাটে স্বাভাবিক গতি হারাচ্ছে রাজধানীর খালগুলো। পানির প্রবাহ ব্যাহত হওয়ায় বাড়ছে জলাবদ্ধতা।
+      দখল ও দূষণমুক্ত করতে সি.এস রেকর্ড ধরে মাস্টারপ্ল্যান কার্যকরের দাবি পরিবেশবাদী সংগঠনগুলোর।
+    </p>
+    <a href="https://www.youtube.com/watch?v=FuzhPIjggjY" target="_blank" rel="noopener noreferrer" class="yt-watch-btn">
+      <i class="fa-brands fa-youtube"></i> Watch on YouTube
+    </a>
+  </div>
+</article>
+
+<article class="yt-card">
+  <div class="yt-video">
+    <iframe
+      src="https://www.youtube.com/embed/eUuYUGYkvxs"
+      title="রাজধানীর জলজট থেকে মুক্তি কবে?"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="yt-body">
+    <div class="yt-meta">
+      <span class="yt-date"><i class="fa-regular fa-calendar"></i> Jul 30, 2023</span>
+      <span class="tag">City Drain</span>
+    </div>
+    <h3 class="yt-title">রাজধানীর জলজট থেকে মুক্তি কবে?</h3>
+    <p class="yt-desc">
+      দুর্বল ড্রেনেজ ব্যবস্থার কারণে সামান্য বৃষ্টিতেই রাজধানীতে জলজট নতুন কিছু নয়!
+      নানা উদ্যোগেও মুক্তি মিলছে না।
+    </p>
+    <a href="https://www.youtube.com/watch?v=eUuYUGYkvxs" target="_blank" rel="noopener noreferrer" class="yt-watch-btn">
+      <i class="fa-brands fa-youtube"></i> Watch on YouTube
+    </a>
+  </div>
+</article>
+
+<article class="yt-card">
+  <div class="yt-video">
+    <iframe
+      src="https://www.youtube.com/embed/PwsbKO7cLWA"
+      title="থার্টিফার্স্ট নাইট ঘিরে নগরবাসী ও প্রাণীকূলে আতঙ্ক!"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="yt-body">
+    <div class="yt-meta">
+      <span class="yt-date"><i class="fa-regular fa-calendar"></i> Dec 31, 2023</span>
+      <span class="tag">New Year's Eve</span>
+    </div>
+    <h3 class="yt-title">থার্টিফার্স্ট নাইট ঘিরে নগরবাসী ও প্রাণীকূলে আতঙ্ক!</h3>
+    <p class="yt-desc">
+      উৎসব আনন্দের। কিন্তু আতশবাজি ও ফানুসের অনিয়ন্ত্রিত ব্যবহারে তা হয়ে উঠছে আতঙ্কের নাম।
+      তাই, খ্রিস্টীয় নতুন বছর উদযাপনে এসব রেওয়াজ বন্ধে সব মহল থেকেই দাবি উঠেছে জোরেশোরে।
+    </p>
+    <a href="https://www.youtube.com/watch?v=PwsbKO7cLWA" target="_blank" rel="noopener noreferrer" class="yt-watch-btn">
+      <i class="fa-brands fa-youtube"></i> Watch on YouTube
+    </a>
+  </div>
+</article>
       </div>
     </div>
   </section>
 
-  <script>
-    const nagorikVideos = [
-      {
-        embed: "https://www.youtube.com/embed/qPZ3WULx4kY",
-        watch: "https://www.youtube.com/watch?v=qPZ3WULx4kY",
-        date: "Feb 22, 2025",
-        tag: "Local Bus",
-        
-        title: "বেপরোয়া গতি, অসুস্থ প্রতিযোগিতায় অতিষ্ঠ মানুষ",
-        desc: "A year-in-review assessment of the interim government's performance, drawing on expert opinion and public sentiment."
-      },
-      {
-        embed: "https://www.youtube.com/embed/V9gJGiHUSrQ",
-        watch: "https://www.youtube.com/watch?v=V9gJGiHUSrQ",
-        date: "Mar 2, 2024",
-        tag: " Fire Restaurent",
-        title: "ঘটনার পরে জানা যায় অনিয়মের কারণ",
-        desc: "Live studio coverage as bail is granted to student protesters and political party leaders following the July uprising."
-      },
-      {
-        embed: "http://youtube.com/embed/IiKPNMCWacU",
-        watch: "http://youtube.com/watch?v=IiKPNMCWacU",
-        date: "Mar 2, 2024",
-        tag: "Fire Special",
-      
-        title: "নোটিশেই সীমাবদ্ধ নিরাপত্তা ইস্যু! ",
-        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-      }
-      ,
-      {
-        embed: "https://www.youtube.com/embed/FuzhPIjggjY",
-        watch: "https://www.youtube.com/watch?v=FuzhPIjggjY",
-        date: "Aug 5, 2023",
-        tag: "Waterlog",
-      
-        title: "সমাধান নেই জলাবদ্ধতার, ভোগান্তিতে নগরবাসী",
-        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-      }
-      ,
-      {
-        embed: "https://www.youtube.com/embed/eUuYUGYkvxs",
-        watch: "https://www.youtube.com/watch?v=eUuYUGYkvxs",
-        date: "Jul 30, 2023",
-        tag: "City Drain",
-      
-        title: "রাজধানীর জলজট থেকে মুক্তি কবে?",
-        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-      }
-      ,
-      {
-        embed: "https://www.youtube.com/embed/PwsbKO7cLWA",
-        watch: "https://www.youtube.com/watch?v=PwsbKO7cLWA",
-        date: "Dec 31, 2023",
-        tag: "New Year's Eve",
-      
-        title: "থার্টিফার্স্ট নাইট ঘিরে নগরবাসী ও প্রাণীকূলে আতঙ্ক!",
-        desc: "Exclusive on-location reporting from cyclone-struck villages, with economic impact analysis and community testimonies."
-      }
-    ];
-
-    const nagorikGrid = document.getElementById("nagorik-grid");
-
-    nagorikGrid.innerHTML = nagorikVideos.map(video => `
-        <article class="yt-card">
-          <div class="yt-video">
-            <iframe
-              src="${video.embed}"
-              title="${video.title}"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="yt-body">
-            <div class="yt-meta">
-              <span class="yt-date"><i class="fa-regular fa-calendar"></i> ${video.date}</span>
-              <span class="tag ">${video.tag}</span>
-            </div>
-            <h3 class="yt-title">${video.title}</h3>
-            <p class="yt-desc">${video.desc}</p>
-            <a
-              href="${video.watch}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="yt-watch-btn"
-            >
-              <i class="fa-brands fa-youtube"></i> Watch on YouTube
-            </a>
-          </div>
-        </article>
-      `).join("");
-  </script>
+ 
 
   </section>
 

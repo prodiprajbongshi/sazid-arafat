@@ -1648,7 +1648,7 @@ ul {
 /* --- Portfolio Hero --- */
 
 .portfolio-hero {
-  padding: 140px 8% 60px 0;
+  padding: 140px 0px 60px 0;
   background: var(--color-navy);
   color: var(--color-white);
   overflow: hidden;
