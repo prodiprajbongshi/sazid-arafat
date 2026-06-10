@@ -3490,47 +3490,99 @@ ul {
   flex-shrink: 0;
 }
 
-/* ─── STATS STRIP ─── */
+/* ==========================
+   STATS STRIP
+========================== */
 
-.home-stats-strip {
-  background: var(--color-navy);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0;
-  padding: 0;
+.stats-strip-wrapper {
+    background: var(--color-navy);
+    padding: 40px 20px;
+    margin-top: 60px;
 }
 
-.hss-item {
-  flex: 1;
-  min-width: 160px;
-  text-align: center;
-  padding: 40px 20px;
+.stats-strip {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
 
-.hss-num {
-  display: block;
-  font-size: 48px;
-  font-weight: 700;
-  color: var(--color-gold);
-  line-height: 1;
-  margin-bottom: 8px;
+.stat-item {
+    flex: 1;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.hss-label {
-  display: block;
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.65);
-  letter-spacing: 0.3px;
+.port-stat-num {
+    font-size:24px;
+    font-weight: 700;
+    color: var(--color-gold-light);
+    line-height: 1;
+    margin-bottom: 10px;
 }
 
-.hss-divider {
-  width: 1px;
-  height: 60px;
-  background: rgba(255, 255, 255, 0.12);
-  flex-shrink: 0;
+.port-stat-label {
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    color: rgba(255, 255, 255, 0.85);
+    text-align: center;
 }
+
+/* ==========================
+   TABLET
+========================== */
+@media (max-width: 992px) {
+    .stats-strip {
+        gap: 20px;
+    }
+
+    .port-stat-label {
+        font-size: 0.95rem;
+    }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+@media (max-width: 768px) {
+    .stats-strip {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .stat-item {
+        flex: 0 0 calc(50% - 15px);
+    }
+}
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+@media (max-width: 480px) {
+    .stats-strip-wrapper {
+        padding: 30px 15px;
+    }
+
+    .stats-strip {
+        gap: 25px;
+    }
+
+    .stat-item {
+        flex: 0 0 100%;
+    }
+
+    .port-stat-num {
+        margin-bottom: 8px;
+    }
+}
+ 
+ 
 
 /* ─── HOME GALLERY ─── */
 
@@ -3569,6 +3621,7 @@ ul {
 
 .hg-item:hover img {
   transform: scale(1.06);
+  cursor:pointer
 }
 
 .hg-overlay {
@@ -3828,6 +3881,111 @@ ul {
 .hpc-cert-item:hover .hpc-cert-zoom {
   opacity: 1;
 }
+
+/* =========================
+   CERTIFICATE LIGHTBOX
+========================= */
+
+.cert-gallery-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.92);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: .3s ease;
+  z-index: 9999;
+}
+
+.cert-gallery-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cert-gallery-image {
+  max-width: 90%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.cert-gallery-close,
+.cert-gallery-prev,
+.cert-gallery-next {
+  position: absolute;
+  border: none;
+  cursor: pointer;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  background: rgba(255,255,255,.15);
+  color: #fff;
+
+  font-size: 18px;
+}
+
+.cert-gallery-close {
+  top: 25px;
+  right: 25px;
+}
+
+.cert-gallery-prev {
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cert-gallery-next {
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cert-gallery-close:hover,
+.cert-gallery-prev:hover,
+.cert-gallery-next:hover {
+  background: rgba(255,255,255,.25);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .cert-gallery-prev,
+  .cert-gallery-next {
+    width: 42px;
+    height: 42px;
+  }
+
+  .cert-gallery-image {
+    max-width: 95%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ─── HOME CTA STRIP ─── */
 

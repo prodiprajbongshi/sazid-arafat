@@ -18,86 +18,69 @@ menuBtn.addEventListener("click", () => {
    MULTIPLE SLIDERS
 ========================= */
 
-const sliders = document.querySelectorAll(".slider");
+ document.addEventListener("DOMContentLoaded", () => {
 
-sliders.forEach((slider) => {
+  const sliders = document.querySelectorAll(".home-slider");
 
-  const slides = slider.querySelectorAll(".slide");
+  sliders.forEach((slider) => {
 
-  const nextBtn = slider.querySelector(".next");
-  const prevBtn = slider.querySelector(".prev");
+    const slides = slider.querySelectorAll(".slide");
+    const nextBtn = slider.querySelector(".next");
+    const prevBtn = slider.querySelector(".prev");
 
-  let currentSlide = 0;
+    let currentSlide = 0;
 
-  /* =========================
-     SHOW SLIDE
-  ========================= */
+    function showSlide(index) {
 
-  function showSlide(index){
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
 
-    slides.forEach((slide) => {
-      slide.classList.remove("active");
-    });
-
-    slides[index].classList.add("active");
-  
-  }
-
-  /* =========================
-     NEXT BUTTON
-  ========================= */
-
-  nextBtn.addEventListener("click", () => {
-
-    currentSlide++;
-
-    if(currentSlide >= slides.length){
-      currentSlide = 0;
+      slides[index].classList.add("active");
     }
 
-    showSlide(currentSlide);
-
-  });
-
-  /* =========================
-     PREVIOUS BUTTON
-  ========================= */
-
-  prevBtn.addEventListener("click", () => {
-
-    currentSlide--;
-
-    if(currentSlide < 0){
-      currentSlide = slides.length - 1;
-    }
-
-    showSlide(currentSlide);
-
-  });
-
-  /* =========================
-     AUTO SLIDE
-  ========================= */
-
-  // Disable autoplay for #slider2
-  if (slider.id !== "slider2") {
-
-    setInterval(() => {
+    // Next button
+    nextBtn.addEventListener("click", () => {
 
       currentSlide++;
 
-      if(currentSlide >= slides.length){
+      if (currentSlide >= slides.length) {
         currentSlide = 0;
       }
 
       showSlide(currentSlide);
 
-    }, 4000);
+    });
 
+    // Previous button
+    prevBtn.addEventListener("click", () => {
+
+      currentSlide--;
+
+      if (currentSlide < 0) {
+        currentSlide = slides.length - 1;
+      }
+
+      showSlide(currentSlide);
+
+    });
+
+  // Autoplay for all sliders
+setInterval(() => {
+
+  currentSlide++;
+
+  if (currentSlide >= slides.length) {
+    currentSlide = 0;
   }
 
-});
+  showSlide(currentSlide);
 
+}, 4000);
+
+  });
+
+});
 
 
 
@@ -139,3 +122,87 @@ const observer = new IntersectionObserver(
 );
 
 counters.forEach(counter => observer.observe(counter));
+
+
+
+
+
+
+
+
+// certificate image gellery
+document.addEventListener("DOMContentLoaded", () => {
+
+  const certItems = document.querySelectorAll(".hpc-cert-item");
+  const images = document.querySelectorAll(".hpc-cert-img");
+
+  const modal = document.getElementById("certGallery");
+  const modalImg = document.querySelector(".cert-gallery-image");
+
+  const prevBtn = document.querySelector(".cert-gallery-prev");
+  const nextBtn = document.querySelector(".cert-gallery-next");
+  const closeBtn = document.querySelector(".cert-gallery-close");
+
+  let currentIndex = 0;
+
+  function showImage(index) {
+    modalImg.src = images[index].src;
+    modalImg.alt = images[index].alt;
+  }
+
+  function openGallery(index) {
+    currentIndex = index;
+    showImage(currentIndex);
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeGallery() {
+    modal.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
+
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  }
+
+  certItems.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      openGallery(index);
+    });
+  });
+
+  nextBtn.addEventListener("click", nextImage);
+  prevBtn.addEventListener("click", prevImage);
+  closeBtn.addEventListener("click", closeGallery);
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      closeGallery();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+
+    if (!modal.classList.contains("active")) return;
+
+    if (e.key === "ArrowRight") {
+      nextImage();
+    }
+
+    if (e.key === "ArrowLeft") {
+      prevImage();
+    }
+
+    if (e.key === "Escape") {
+      closeGallery();
+    }
+  });
+
+});
