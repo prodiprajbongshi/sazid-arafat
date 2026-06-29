@@ -84,7 +84,7 @@ ul {
 /* NAVBAR                     */
 /* ========================= */
 
-.navbar {
+.navbar, navbar2 {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -587,6 +587,8 @@ ul {
   gap: 15px;
 }
 
+ 
+
 .about-name {
   font-size: 14px;
   font-weight: 700;
@@ -607,6 +609,126 @@ ul {
   color: #999;
   text-align: center;
 }
+
+/* works tab  */
+/* ================= */
+.tabs-container{
+    width:1400px;
+    max-width:100%;
+    margin:  0 auto;
+    padding: 0 60px;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.tabs{
+    display:flex;
+    flex-wrap:wrap;
+    background:var(--color-navy);
+   
+}
+
+.tab-btn{
+    flex:1;
+    padding:18px;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+    position:relative;
+     color: var(--color-light-gray);
+}
+
+.tab-btn:hover{
+    background:#e8edf751;
+}
+
+.tab-btn.active{
+    color:var(--color-gold);
+}
+
+.tab-btn.active::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:3px;
+    background:var(--color-gold);
+}
+
+.tab-content{
+    display:none;
+    padding:30px;
+    animation:fade .4s ease;
+}
+
+.tab-content.active{
+    display:block;
+}
+
+.tab-content h2{
+    margin-bottom:15px;
+    color:#222;
+}
+
+.tab-content p{
+    color:#666;
+    line-height:1.8;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:600px){
+
+ 
+.tabs-container{
+  padding: 0 0px;
+}
+.tabs{
+  border-radius: 5px;
+  margin: 0 10px !important;
+}
+.tab-btn{
+    border-bottom:1px solid #ddd;
+}
+
+.tab-btn.active::after{
+    display:none;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ========================= */
 /* SOCIAL ICONS (HOME)        */
